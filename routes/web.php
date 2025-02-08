@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Homecontroller;
+use App\Http\Controllers\MartinController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [Homecontroller::class,"home"]);
+
+Route::get("/daisy",function(){
+    return view("shutup");
 });
+
+Route::get('/martin', [MartinController::class,"martin"]);
+
+Route::get('/home', [Homecontroller::class,"homepage"]);
