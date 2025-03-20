@@ -91,7 +91,14 @@
 
             <!-- Sidebar footer START -->
             <div class="d-flex align-items-center justify-content-between text-primary-hover mt-auto p-3">
-                <a class="h6 fw-light mb-0 text-body" href="sign-in.html.htm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Sign out">
+                <form method="POST" action="{{ route('logout') }}" id="logout-form">
+                    @csrf
+                  </form>
+
+
+
+                <a class="h6 fw-light mb-0 text-body"  data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Sign out" href="{{ route('logout') }}" onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i> Log out
                 </a>
                 <a class="h6 mb-0 text-body" href="admin-settings.html.htm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Settings">

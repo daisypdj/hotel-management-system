@@ -265,7 +265,16 @@
 								<li><a class="dropdown-item" href="#"><i class="bi bi-heart fa-fw me-2"></i>My Wishlist</a></li>
 								<li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Settings</a></li>
 								<li><a class="dropdown-item" href="#"><i class="bi bi-info-circle fa-fw me-2"></i>Help Center</a></li>
-								<li><a class="dropdown-item bg-danger-soft-hover" href="#"><i class="bi bi-power fa-fw me-2"></i>Sign Out</a></li>
+								<li> <form method="POST" action="{{ route('logout') }}" id="logout-form">
+                                    @csrf
+                                  </form>
+
+
+
+                                <a class="h6 fw-light mb-0 text-body"  data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Sign out" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Log out
+                                </a></li>
 							</ul>
 						</li>
 						<!-- Profile dropdown END -->
