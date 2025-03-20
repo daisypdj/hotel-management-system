@@ -15,10 +15,13 @@ use App\Http\Controllers\MartinController;
 |
 */
 
-Route::get('/', [Homecontroller::class,"home"]);
+Route::get('/', [Homecontroller::class,"homepage"]);
 
 Route::get("/daisy",function(){
-    return view("shutup");
+    return [
+
+       "artircle" => "article 1"
+    ];
 });
 
 Route::get('/martin', [MartinController::class,"martin"]);
