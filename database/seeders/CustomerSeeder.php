@@ -16,7 +16,7 @@ class CustomerSeeder extends Seeder
         User::create([
             'name'=>"level",
             'email'=>"level@hotelo.com",
-            'role_id'=>3
+            'role_id'=>3,
             'password'=>"password",
             'phone'=>'690394365'
         ]);

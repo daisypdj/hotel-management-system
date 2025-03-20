@@ -27,6 +27,6 @@ class DatabaseSeeder extends Seeder
             AdminSeeder::class,
             GerantSeeder::class,
             CustomerSeeder::class
-        ])
+        ]);
     }
 }

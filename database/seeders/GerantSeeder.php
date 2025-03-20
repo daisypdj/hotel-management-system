@@ -16,7 +16,7 @@ class GerantSeeder extends Seeder
         User::create([
             'name'=>"Daira",
             'email'=>"daira@hotelo.com",
-            'role_id'=>2
+            'role_id'=>2,
             'password'=>"password",
             'phone'=>'697768574'
         ]);
