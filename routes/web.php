@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Homecontroller;
-use App\Http\Controllers\MartinController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,15 +15,16 @@ use App\Http\Controllers\MartinController;
 |
 */
 
-Route::get('/', [Homecontroller::class,"homepage"]);
 
-Route::get("/daisy",function(){
-    return [
 
-       "artircle" => "article 1"
-    ];
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
-Route::get('/martin', [MartinController::class,"martin"]);
-
-Route::get('/home', [Homecontroller::class,"homepage"]);
+Route::get('/', [Homecontroller::class,"homepage"]);
+require __DIR__.'/auth.php';

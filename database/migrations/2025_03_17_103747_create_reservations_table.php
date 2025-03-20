@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('check_In');
             $table->string('check_out');
             $table->string('total_price');
-            $table->timestamps();-
+            $table->timestamps();
         });
     }
 

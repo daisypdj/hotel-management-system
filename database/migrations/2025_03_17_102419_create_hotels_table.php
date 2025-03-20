@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('hotel_profile');
             $table->foreignIdFor(User::class)->constrained()->restrictOnUpdate()->restrictOnDelete();
             $table->timestamps();
-            t
+            
         });
     }
 

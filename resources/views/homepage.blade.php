@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Booking - Multipurpose Online Booking Theme</title>
+	<title>Hotel Management System</title>
 
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
@@ -126,212 +126,19 @@
 
 					<!-- Nav item Listing -->
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="listingMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listings</a>
-						<ul class="dropdown-menu" aria-labelledby="listingMenu">
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Hotel</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index.html-1.htm">Hotel Home</a></li>
-									<li> <a class="dropdown-item" href="index-hotel-chain.html.htm">Hotel Chain</a></li>
-									<li> <a class="dropdown-item" href="index-resort.html.htm">Hotel Resort</a></li>
-									<li> <a class="dropdown-item" href="hotel-grid.html.htm">Hotel Grid</a></li>
-									<li> <a class="dropdown-item" href="hotel-list.html.htm">Hotel List</a></li>
-									<li> <a class="dropdown-item" href="hotel-detail.html.htm">Hotel Detail</a></li>
-									<li> <a class="dropdown-item" href="room-detail.html.htm">Room Detail</a></li>
-									<li> <a class="dropdown-item" href="hotel-booking.html.htm">Hotel Booking</a></li>
-								</ul>
-							</li>
+						<a class="nav-link " href="#" id="listingMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hotel</a>
 
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Flight</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-flight.html.htm">Flight Home</a></li>
-									<li> <a class="dropdown-item" href="flight-list.html.htm">Flight List</a></li>
-									<li> <a class="dropdown-item" href="flight-detail.html.htm">Flight Detail</a></li>
-									<li> <a class="dropdown-item" href="flight-booking.html.htm">Flight Booking</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Tour</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-tour.html.htm">Tour Home</a></li>
-									<li> <a class="dropdown-item" href="tour-grid.html.htm">Tour Grid</a></li>
-									<li> <a class="dropdown-item" href="tour-detail.html.htm">Tour Detail</a></li>
-									<li> <a class="dropdown-item" href="tour-booking.html.htm">Tour Booking</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Cab</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-cab.html.htm">Cab Home</a></li>
-									<li> <a class="dropdown-item" href="cab-list.html.htm">Cab List</a></li>
-									<li> <a class="dropdown-item" href="cab-detail.html.htm">Cab Detail</a></li>
-									<li> <a class="dropdown-item" href="cab-booking.html.htm">Cab Booking</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Directory</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-directory.html.htm">Directory Home</a></li>
-									<li> <a class="dropdown-item" href="directory-detail.html.htm">Directory Detail</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Add Listing</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="join-us.html.htm">Join us</a></li>
-									<li> <a class="dropdown-item" href="add-listing.html.htm">Add Listing</a></li>
-									<li> <a class="dropdown-item" href="add-listing-minimal.html.htm">Add Listing Minimal</a></li>
-									<li> <a class="dropdown-item" href="listing-added.html.htm">Listing Added</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Hero</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="hero-inline-form.html.htm">Hero Inline Form</a></li>
-									<li> <a class="dropdown-item" href="hero-multiple-search.html.htm">Hero Multiple Search</a></li>
-									<li> <a class="dropdown-item" href="hero-image-gallery.html.htm">Hero Image Gallery</a></li>
-									<li> <a class="dropdown-item" href="hero-split.html.htm">Hero Split</a></li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="booking-confirm.html.htm">Booking Confirmed</a></li>
-							<li> <a class="dropdown-item" href="compare-listing.html.htm">Compare Listing</a></li>
-							<li> <a class="dropdown-item" href="offer-detail.html.htm">Offer Detail</a></li>
-						</ul>
 					</li>
 
 					<!-- Nav item Pages -->
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-						<ul class="dropdown-menu" aria-labelledby="pagesMenu">
+						<a class="nav-link" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Reservation</a>
 
-							<li> <a class="dropdown-item" href="about.html.htm">About</a></li>
-							<li> <a class="dropdown-item" href="contact.html.htm">Contact</a></li>
-							<li> <a class="dropdown-item" href="contact-2.html.htm">Contact 2</a></li>
-							<li> <a class="dropdown-item" href="team.html.htm">Our Team</a></li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Authentication</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="sign-in.html.htm">Sign In</a></li>
-									<li> <a class="dropdown-item" href="sign-up.html.htm">Sign Up</a></li>
-									<li> <a class="dropdown-item" href="forgot-password.html.htm">Forgot Password</a></li>
-									<li> <a class="dropdown-item" href="two-factor-auth.html.htm">Two factor authentication</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Blog</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="blog.html.htm">Blog</a></li>
-									<li> <a class="dropdown-item" href="blog-detail.html.htm">Blog Detail</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Help</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="help-center.html.htm">Help Center</a></li>
-									<li> <a class="dropdown-item" href="help-detail.html.htm">Help Detail</a></li>
-									<li> <a class="dropdown-item" href="privacy-policy.html.htm">Privacy Policy</a></li>
-									<li> <a class="dropdown-item" href="terms-of-service.html.htm">Terms of Service</a></li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="pricing.html.htm">Pricing</a></li>
-							<li> <a class="dropdown-item" href="faq.html.htm">FAQs</a></li>
-							<li> <a class="dropdown-item" href="error.html.htm">Error 404</a></li>
-							<li> <a class="dropdown-item" href="coming-soon.html.htm">Coming Soon</a></li>
-						</ul>
 					</li>
 
-					<!-- Nav item Account -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="accounntMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Accounts</a>
-						<ul class="dropdown-menu" aria-labelledby="accounntMenu">
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">User Profile</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="account-profile.html.htm">My Profile</a> </li>
-									<li> <a class="dropdown-item" href="account-bookings.html.htm">My Bookings</a> </li>
-									<li> <a class="dropdown-item" href="account-travelers.html.htm">Travelers</a> </li>
-									<li> <a class="dropdown-item" href="account-payment-details.html.htm">Payment Details</a> </li>
-									<li> <a class="dropdown-item" href="account-wishlist.html.htm">Wishlist</a> </li>
-									<li> <a class="dropdown-item" href="account-settings.html.htm">Settings</a> </li>
-									<li> <a class="dropdown-item" href="account-delete.html.htm">Delete Profile</a> </li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Agent Dashboard</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="agent-dashboard.html.htm">Dashboard</a> </li>
-									<li> <a class="dropdown-item" href="agent-listings.html.htm">Listings</a> </li>
-									<li> <a class="dropdown-item" href="agent-bookings.html.htm">Bookings</a> </li>
-									<li> <a class="dropdown-item" href="agent-activities.html.htm">Activities</a> </li>
-									<li> <a class="dropdown-item" href="agent-earnings.html.htm">Earnings</a> </li>
-									<li> <a class="dropdown-item" href="agent-reviews.html.htm">Reviews</a> </li>
-									<li> <a class="dropdown-item" href="agent-settings.html.htm">Settings</a> </li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="admin-dashboard.html.htm">Master Admin</a> </li>
-						</ul>
-					</li>
 
           <!-- Nav item link-->
-					<li class="nav-item dropdown">
-						<a class="nav-link" href="#" id="advanceMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-ellipsis-h"></i>
-						</a>
-						<ul class="dropdown-menu min-w-auto" data-bs-popper="none">
-							<li>
-								<a class="dropdown-item" href="https://support.webestica.com/" target="_blank">
-									<i class="text-warning fa-fw bi bi-life-preserver me-2"></i>Support
-								</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="docs/index.html.htm" target="_blank">
-									<i class="text-danger fa-fw bi bi-card-text me-2"></i>Documentation
-								</a>
-							</li>
-							<li> <hr class="dropdown-divider"></li>
-							<li>
-								<a class="dropdown-item" href="rtl/index.htm" target="_blank">
-									<i class="text-info fa-fw bi bi-toggle-off me-2"></i>RTL demo
-								</a>
-							</li>
-							<li>
-								<a class="dropdown-item" href="https://themes.getbootstrap.com/store/webestica/" target="_blank">
-									<i class="text-success fa-fw bi bi-cloud-download-fill me-2"></i>Buy Booking!
-								</a>
-							</li>
-							<li> <hr class="dropdown-divider"></li>
-							<li>
-								<a class="dropdown-item" href="docs/alerts.html.htm" target="_blank">
-									<i class="text-orange fa-fw bi bi-puzzle-fill me-2"></i>Components
-								</a>
-							</li>
-						</ul>
-					</li>
+
 				</ul>
 			</div>
 			<!-- Main navbar END -->
@@ -340,16 +147,16 @@
 			<div class="navbar-collapse collapse" id="navbarCategoryCollapse">
 				<ul class="navbar-nav navbar-nav-scroll nav-pills-primary-soft text-center ms-auto p-2 p-xl-0">
 					<!-- Nav item Hotel -->
-					<li class="nav-item"> <a class="nav-link active" href="index.html-1.htm"><i class="fa-solid fa-hotel me-2"></i>Hotel</a>	</li>
+					<li class="nav-item"> <a href="/login" class="nav-link bg-primary text-white active" href="index.html-1.htm">Login</a>	</li>
 
 					<!-- Nav item Flight -->
-					<li class="nav-item"> <a class="nav-link" href="index-flight.html.htm"><i class="fa-solid fa-plane me-2"></i>Flight</a>	</li>
+					<li class="nav-item"> <a class="nav-link" href="/register">Sign In</a>	</li>
 
 					<!-- Nav item Tour -->
-					<li class="nav-item"> <a class="nav-link" href="index-tour.html.htm"><i class="fa-solid fa-globe-americas me-2"></i>Tour</a> </li>
+
 
 					<!-- Nav item Cabs -->
-					<li class="nav-item"> <a class="nav-link" href="index-cab.html.htm"><i class="fa-solid fa-car me-2"></i>Cab</a></li>
+
 				</ul>
 			</div>
 			<!-- Nav category menu END -->
