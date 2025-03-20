@@ -5,6 +5,7 @@ use App\Http\Controllers\Homecontroller;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Gerant\DashboardController as GerantDashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::get('/admin/dashboard',[DashboardController::class,'index'])->name('admin.dashboard');
+    Route::get('gerant/dashboard',[GerantDashboardController::class,'index'])->name('gerant.dashboard');
 });
 Route::get('/', [Homecontroller::class,"homepage"]);
 require __DIR__.'/auth.php';
