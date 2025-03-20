@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Homecontroller;
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -28,3 +29,4 @@ Route::middleware('auth')->group(function () {
 });
 Route::get('/', [Homecontroller::class,"homepage"]);
 require __DIR__.'/auth.php';
+Route::post('/login', [LoginController::class, 'loginform']);
