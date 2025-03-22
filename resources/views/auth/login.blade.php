@@ -120,7 +120,7 @@ Main Content START -->
 								<p class="mb-0">New here?<a href="/register"> Create an account</a></p>
 
 								<!-- Form START -->
-								<form method='POST' action="/login" class="mt-4 text-start">
+								<form method='POST' action="{{route('login')}}" class="mt-4 text-start">
                                     @csrf
 									<!-- Email -->
 									<div class="mb-3">
