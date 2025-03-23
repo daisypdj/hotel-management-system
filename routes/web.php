@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Homecontroller;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Admin\RoomController;
 use App\Http\Controllers\Admin\HotelController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Gerant\DashboardController as GerantDashboardController;
@@ -25,7 +26,7 @@ Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(func
 
     Route::get('dashboard',[DashboardController::class,'index'])->name('dashboard');
     Route::resource('hotels',HotelController::class);
-    //Route::resource('rooms',RoomController::class);
+    Route::resource('rooms',RoomController::class);
 });
 
 Route::middleware('auth')->group(function () {

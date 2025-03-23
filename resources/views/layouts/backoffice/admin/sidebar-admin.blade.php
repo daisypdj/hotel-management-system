@@ -35,7 +35,7 @@
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseagent" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="">Listes des Chambres</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rooms.index') }}">Listes des Chambres</a></li>
                         <li class="nav-item"> <a class="nav-link" href="">Ajouter une Chambre</a></li>
                     </ul>
                 </li>
@@ -53,11 +53,11 @@
 
                 <!-- Menu item -->
                 <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="collapse" href="#collapseagent" role="button" aria-expanded="false" aria-controls="collapseagent">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapseres" role="button" aria-expanded="false" aria-controls="collapseagent">
                     Reservation
                     </a>
                     <!-- Submenu -->
-                    <ul class="nav collapse flex-column" id="collapseagent" data-bs-parent="#navbar-sidebar">
+                    <ul class="nav collapse flex-column" id="collapseres" data-bs-parent="#navbar-sidebar">
                         <li class="nav-item"> <a class="nav-link" href="admin-agent-list.html">Listes des Reservations</a></li>
 
                     </ul>
