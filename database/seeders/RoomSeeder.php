@@ -15,10 +15,11 @@ class RoomSeeder extends Seeder
         for($i=1;$i<80;$i++){
             Room::create([
                 'id'=>$i,
-                'status'=>0,
+                'status'=>1,
                 'hotel_id'=>rand(1,19),
-                'room__type_id'=>rand(1,5),
-                'image'=>"assets/images/rooms/rooms.jpg",
+                'room_type_id'=>rand(1,5),
+                'Room_profile'=>"assets/images/rooms/rooms.jpg",
+                'Room_price'=>rand(25000,100000),
             ],
             );
         }

@@ -21,6 +21,7 @@ use App\Http\Controllers\Gerant\DashboardController as GerantDashboardController
 */
 
 Route::get('step-one/list-hotels',[HotelController::class,'stepOne'])->name('search');
+Route::get('step-two/list-rooms/{id}',[HotelController::class,'stepTwo'])->name('step-two');
 
 Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(function(){
 
