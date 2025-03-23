@@ -225,7 +225,7 @@ Hotel::create([
     'star_number'=>3,
     'hotel_town'=>"Yaoundé",
     'hotel_profile'=>'assets/images/hotel/yahot.jpg',
-    "hotel_phone"=>"695636738"
+    "hotel_phone"=>"694636738"
 ],
 );
 
@@ -237,7 +237,7 @@ Hotel::create([
     'star_number'=>2,
     'hotel_town'=>"Yaoundé",
     'hotel_profile'=>'assets/images/hotel/djeuga.jpg',
-    "hotel_phone"=>"695636738"
+    "hotel_phone"=>"655636738"
 ],
 );
     }
