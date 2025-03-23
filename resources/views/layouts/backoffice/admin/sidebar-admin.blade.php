@@ -36,7 +36,7 @@
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseagent" data-bs-parent="#navbar-sidebar">
                         <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rooms.index') }}">Listes des Chambres</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="">Ajouter une Chambre</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rooms.create') }}">Ajouter une Chambre</a></li>
                     </ul>
                 </li>
                 <!-- Menu item -->
