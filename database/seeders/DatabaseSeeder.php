@@ -6,8 +6,10 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Database\Seeders\RoleSeeder;
 use Database\Seeders\AdminSeeder;
+use Database\Seeders\HotelSeeder;
 use Database\Seeders\GerantSeeder;
 use Database\Seeders\CustomerSeeder;
+use Database\Seeders\RoomTypeSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -26,7 +28,9 @@ class DatabaseSeeder extends Seeder
             RoleSeeder::class,
             AdminSeeder::class,
             GerantSeeder::class,
-            CustomerSeeder::class
+            CustomerSeeder::class,
+            HotelSeeder::class,
+            RoomTypeSeeder::class
         ]);
     }
 }

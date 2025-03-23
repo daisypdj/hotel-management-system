@@ -20,7 +20,7 @@ use App\Http\Controllers\Gerant\DashboardController as GerantDashboardController
 |
 */
 
-
+Route::get('step-one/list-hotels',[HotelController::class,'stepOne'])->name('search');
 
 Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(function(){
 
