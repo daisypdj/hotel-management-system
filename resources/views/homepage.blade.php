@@ -18,8 +18,8 @@ Main Banner START -->
 				<!-- Content -->
 				<div class="col-lg-6 position-relative mb-4 mb-md-0">
 					<!-- Title -->
-					<h1 class="mb-4 mt-md-5 display-5">Trouvez et Reserver
-						<span class="position-relative z-index-9">les meilleurs hôtels à proximité.
+					<h1 class="mb-4 mt-md-5 display-5">Find and Book
+						<span class="position-relative z-index-9">the best hotels near you.
 							<!-- SVG START -->
 							<span class="position-absolute top-50 start-50 translate-middle z-index-n1 d-none d-md-block mt-4">
 								<svg width="390.5px" height="21.5px" viewbox="0 0 445.5 21.5">
