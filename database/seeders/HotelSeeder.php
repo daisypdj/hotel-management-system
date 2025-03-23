@@ -15,210 +15,229 @@ class HotelSeeder extends Seeder
     {
         Hotel::create([
             'id'=>1,
-            'nom_hotel'=>"Onomo hotel",
+            'hotel_name'=>"Onomo hotel",
+            'hotel_description'=>"Onomo hotel is a luxurious hotel located in the heart of Douala, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
             'user_id'=>2,
-            'nombres_etoiles'=>4,
-            'ville'=>"douala",
-            'image'=>'assets/images/hotel/onomo.jpg',
-            "tel"=>"678390037"
+            'star_number'=>4,
+            'hotel_town'=>"douala",
+            'hotel_profile'=>'assets/images/hotel/onomo.jpg',
+            "hotel_phone"=>"678390037"
         ],
     );
 
     Hotel::create([
         'id'=>2,
-        'nom_hotel'=>"Akwa palace",
+        'hotel_name'=>"Akwa palace",
+        'hotel_description'=>"Akwa palace is a luxurious hotel located in the heart of Douala, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
         'user_id'=>3,
-        'nombres_etoiles'=>4,
-        'ville'=>"douala",
-        'image'=>'assets/images/hotel/akwa-palace.jpg',
-        "tel"=>"667463552"
+        'star_number'=>4,
+        'hotel_town'=>"douala",
+        'hotel_profile'=>'assets/images/hotel/akwa-palace.jpg',
+        "hotel_phone"=>"667463552"
     ],
 );
 
 Hotel::create([
     'id'=>3,
-    'nom_hotel'=>"Ibis hotel",
+    'hotel_name'=>"Ibis hotel",
+    'hotel_description'=>"Ibis hotel is a luxurious hotel located in the heart of Douala, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>4,
-    'nombres_etoiles'=>3,
-    'ville'=>"douala",
-    'image'=>'assets/images/hotel/ibis.jpg',
-    "tel"=>"678039436"
+    'star_number'=>3,
+    'hotel_town'=>"douala",
+    'hotel_profile'=>'assets/images/hotel/ibis.jpg',
+    "hotel_phone"=>"678039436"
 ],
 );
 
 Hotel::create([
     'id'=>4,
-    'nom_hotel'=>"Hotel la falaise",
+    'hotel_name'=>"Hotel la falaise",
+    'hotel_description'=>"Hotel la falaise is a luxurious hotel located in the heart of Douala, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>5,
-    'nombres_etoiles'=>4,
-    'ville'=>"douala",
-    'image'=>'assets/images/hotel/falaise-douala.jpg',
-    "tel"=>"678039436"
+    'star_number'=>4,
+    'hotel_town'=>"douala",
+    'hotel_profile'=>'assets/images/hotel/falaise-douala.jpg',
+    "hotel_phone"=>"678039436"
 ],
 );
 
 Hotel::create([
     'id'=>5,
-    'nom_hotel'=>"Hotel sawa",
+    'hotel_name'=>"Hotel sawa",
+    'hotel_description'=>"Hotel sawa is a luxurious hotel located in the heart of Douala, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>6,
-    'nombres_etoiles'=>3,
-    'ville'=>"douala",
-    'image'=>'assets/images/hotel/sawa.jpg',
-    "tel"=>"678466374"
+    'star_number'=>3,
+    'hotel_town'=>"douala",
+    'hotel_profile'=>'assets/images/hotel/sawa.jpg',
+    "hotel_phone"=>"678466374"
 ],
 );
 
 Hotel::create([
     'id'=>6,
-    'nom_hotel'=>"Star land",
+    'hotel_name'=>"Star land",
+    'hotel_description'=>"Star land is a luxurious hotel located in the heart of Douala, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>7,
-    'nombres_etoiles'=>5,
-    'ville'=>"douala",
-    'image'=>'assets/images/hotel/star-land.jpg',
-    "tel"=>"678637734"
+    'star_number'=>5,
+    'hotel_town'=>"douala",
+    'hotel_profile'=>'assets/images/hotel/star-land.jpg',
+    "hotel_phone"=>"678637734"
 ],
 );
 
 Hotel::create([
     'id'=>7,
-    'nom_hotel'=>"Residence la falaisse",
+    'hotel_name'=>"Residence la falaisse",
+    'hotel_description'=>"Residence la falaisse is a luxurious hotel located in the heart of Douala, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>8,
-    'nombres_etoiles'=>3,
-    'ville'=>"douala",
-    'image'=>'assets/images/hotel/residence-falaise.jpg',
-    "tel"=>"689473552"
+    'star_number'=>3,
+    'hotel_town'=>"douala",
+    'hotel_profile'=>'assets/images/hotel/residence-falaise.jpg',
+    "hotel_phone"=>"689473552"
 ],
 );
 
 Hotel::create([
     'id'=>8,
-    'nom_hotel'=>"Vallee des princes",
+    'hotel_name'=>"Vallee des princes",
+    'hotel_description'=>"Vallee des princes is a luxurious hotel located in the heart of Douala, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>9,
-    'nombres_etoiles'=>4,
-    'ville'=>"douala",
-    'image'=>'assets/images/hotel/valee.jpg',
-    "tel"=>"689473552"
+    'star_number'=>4,
+    'hotel_town'=>"douala",
+    'hotel_profile'=>'assets/images/hotel/valee.jpg',
+    "hotel_phone"=>"689473552"
 ],
 );
 
 Hotel::create([
     'id'=>9,
-    'nom_hotel'=>"Noubou internationnal",
+    'hotel_name'=>"Noubou internationnal",
+    'hotel_description'=>"Noubou internationnal is a luxurious hotel located in the heart of Douala, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>10,
-    'nombres_etoiles'=>4,
-    'ville'=>"douala",
-    'image'=>'assets/images/hotel/noubou.jpg',
-    "tel"=>"689473552"
+    'star_number'=>4,
+    'hotel_town'=>"douala",
+    'hotel_profile'=>'assets/images/hotel/noubou.jpg',
+    "hotel_phone"=>"689473552"
 ],
 );
 
 Hotel::create([
     'id'=>10,
-    'nom_hotel'=>"La falaise de yaounde",
+    'hotel_name'=>"La falaise de yaounde",
+    'hotel_description'=>"La falaise de yaounde is a luxurious hotel located in the heart of Yaoundé, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>11,
-    'nombres_etoiles'=>4,
-    'ville'=>"Yaoundé",
-    'image'=>'assets/images/hotel/falaise-yaounde.jpg',
-    "tel"=>"6902373763"
+    'star_number'=>4,
+    'hotel_town'=>"Yaoundé",
+    'hotel_profile'=>'assets/images/hotel/falaise-yaounde.jpg',
+    "hotel_phone"=>"6902373763"
 ],
 );
 
 Hotel::create([
     'id'=>11,
-    'nom_hotel'=>"Safyad hotel",
+    'hotel_name'=>"Safyad hotel",
+    'hotel_description'=>"Safyad hotel is a luxurious hotel located in the heart of Yaoundé, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>12,
-    'nombres_etoiles'=>2,
-    'ville'=>"Yaoundé",
-    'image'=>'assets/images/hotel/safyad.jpg',
-    "tel"=>"692374893"
+    'star_number'=>2,
+    'hotel_town'=>"Yaoundé",
+    'hotel_profile'=>'assets/images/hotel/safyad.jpg',
+    "hotel_phone"=>"692374893"
 ],
 );
 
 Hotel::create([
     'id'=>12,
-    'nom_hotel'=>"Hotel Franco",
+    'hotel_name'=>"Hotel Franco",
+    'hotel_description'=>"Hotel Franco is a luxurious hotel located in the heart of Yaoundé, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>13,
-    'nombres_etoiles'=>3,
-    'ville'=>"Yaoundé",
-    'image'=>'assets/images/hotel/franco.jpg',
-    "tel"=>"695636738"
+    'star_number'=>3,
+    'hotel_town'=>"Yaoundé",
+    'hotel_profile'=>'assets/images/hotel/franco.jpg',
+        "hotel_phone"=>"695636738"
 ],
 );
 
 Hotel::create([
     'id'=>13,
-    'nom_hotel'=>"Hilton Hotel",
+    'hotel_name'=>"Hilton Hotel",
+    'hotel_description'=>"Hilton Hotel is a luxurious hotel located in the heart of Yaoundé, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>14,
-    'nombres_etoiles'=>5,
-    'ville'=>"Yaoundé",
-    'image'=>'assets/images/hotel/hilton.jpg',
-    "tel"=>"695636738"
+    'star_number'=>5,
+    'hotel_town'=>"Yaoundé",
+    'hotel_profile'=>'assets/images/hotel/hilton.jpg',
+    "hotel_phone"=>"695636738"
 ],
 );
 
 Hotel::create([
     'id'=>14,
-    'nom_hotel'=>"Boun's hotel",
+    'hotel_name'=>"Boun's hotel",
+    'hotel_description'=>"Boun's hotel is a luxurious hotel located in the heart of Yaoundé, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>15,
-    'nombres_etoiles'=>4,
-    'ville'=>"Yaoundé",
-    'image'=>'assets/images/hotel/bouns.jpg',
-    "tel"=>"695636738"
+    'star_number'=>4,
+    'hotel_town'=>"Yaoundé",
+    'hotel_profile'=>'assets/images/hotel/bouns.jpg',
+    "hotel_phone"=>"695636738"
 ],
 );
 
 Hotel::create([
     'id'=>15,
-    'nom_hotel'=>"Massao palace hotel",
+    'hotel_name'=>"Massao palace hotel",
+    'hotel_description'=>"Massao palace hotel is a luxurious hotel located in the heart of Yaoundé, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>16,
-    'nombres_etoiles'=>3,
-    'ville'=>"Yaoundé",
-    'image'=>'assets/images/hotel/massao.jpg',
-    "tel"=>"695636738"
+    'star_number'=>3,
+    'hotel_town'=>"Yaoundé",
+    'hotel_profile'=>'assets/images/hotel/massao.jpg',
+    "hotel_phone"=>"695636738"
 ],
 );
 
 Hotel::create([
     'id'=>16,
-    'nom_hotel'=>"Hotel le fibi",
+    'hotel_name'=>"Hotel le fibi",
+    'hotel_description'=>"Hotel le fibi is a luxurious hotel located in the heart of Yaoundé, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>17,
-    'nombres_etoiles'=>4,
-    'ville'=>"Yaoundé",
-    'image'=>'assets/images/hotel/fibi.jpg',
-    "tel"=>"695636738"
+    'star_number'=>4,
+    'hotel_town'=>"Yaoundé",
+    'hotel_profile'=>'assets/images/hotel/fibi.jpg',
+    "hotel_phone"=>"695636738"
 ],
 );
 
 Hotel::create([
     'id'=>17,
-    'nom_hotel'=>"Hotel la couronne RW",
+    'hotel_name'=>"Hotel la couronne RW",
+    'hotel_description'=>"Hotel la couronne RW is a luxurious hotel located in the heart of Yaoundé, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>18,
-    'nombres_etoiles'=>3,
-    'ville'=>"Yaoundé",
-    'image'=>'assets/images/hotel/couronne.jpg',
-    "tel"=>"695636738"
+    'star_number'=>3,
+    'hotel_town'=>"Yaoundé",
+    'hotel_profile'=>'assets/images/hotel/couronne.jpg',
+    "hotel_phone"=>"695636738"
 ],
 );
 
 Hotel::create([
     'id'=>18,
-    'nom_hotel'=>"Yaahot",
+    'hotel_name'=>"Yaahot",
+    'hotel_description'=>"Yaahot is a luxurious hotel located in the heart of Yaoundé, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>19,
-    'nombres_etoiles'=>3,
-    'ville'=>"Yaoundé",
-    'image'=>'assets/images/hotel/yahot.jpg',
-    "tel"=>"695636738"
+    'star_number'=>3,
+    'hotel_town'=>"Yaoundé",
+    'hotel_profile'=>'assets/images/hotel/yahot.jpg',
+    "hotel_phone"=>"695636738"
 ],
 );
 
 Hotel::create([
     'id'=>19,
-    'nom_hotel'=>"Djeuga palace hotel",
+    'hotel_name'=>"Djeuga palace hotel",
+    'hotel_description'=>"Djeuga palace hotel is a luxurious hotel located in the heart of Yaoundé, Cameroon. It offers a range of rooms and suites, all equipped with modern amenities and luxurious furnishings. The hotel also features a restaurant, bar, and fitness center.",
     'user_id'=>20,
-    'nombres_etoiles'=>2,
-    'ville'=>"Yaoundé",
-    'image'=>'assets/images/hotel/djeuga.jpg',
-    "tel"=>"695636738"
+    'star_number'=>2,
+    'hotel_town'=>"Yaoundé",
+    'hotel_profile'=>'assets/images/hotel/djeuga.jpg',
+    "hotel_phone"=>"695636738"
 ],
 );
     }
