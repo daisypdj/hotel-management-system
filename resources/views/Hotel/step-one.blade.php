@@ -599,3 +599,4 @@ Hotel list END -->
 
 </main>
 @endsection
+
