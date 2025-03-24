@@ -68,7 +68,7 @@
 					<!-- Nav item Cabs -->
                     @auth
                     @if(auth()->user()->role_id=3)
-                    <li class="nav-item"> <a class="nav-link" href="{{ route('customer.fast') }}"><i class="fa-solid fa-car me-2"></i>Reserver Rapidement</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-solid fa-car me-2"></i>Reserver Rapidement</a></li>
                     @endif
                   
                     @endauth
@@ -112,7 +112,7 @@
 
 						<!-- Links -->
 						<li> <hr class="dropdown-divider"></li>
-						<li><a class="" href="{{ route('customer.my-reservations.index') }}"><i class="bi bi-bookmark-check fa-fw me-2"></i>Mes Reservations</a></li>
+						<li><a class="" href="#"><i class="bi bi-bookmark-check fa-fw me-2"></i>Mes Reservations</a></li>
 
                         <form method="POST" action="{{ route('logout') }}" id="logout-form">
                             @csrf
