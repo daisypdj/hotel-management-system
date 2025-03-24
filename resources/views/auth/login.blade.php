@@ -146,20 +146,8 @@ Main Content START -->
 									<!-- Button -->
 									<div><button type="submit" class="btn btn-primary w-100 mb-0">Login</button></div>
 
-									<!-- Divider -->
-									<div class="position-relative my-4">
-										<hr>
-										<p class="small bg-mode position-absolute top-50 start-50 translate-middle px-2">Or sign in with</p>
-									</div>
-
-									<!-- Google and facebook button -->
-									<div class="vstack gap-3">
-										<a href="#" class="btn btn-light mb-0"><i class="fab fa-fw fa-google text-google-icon me-2"></i>Sign in with Google</a>
-										<a href="#" class="btn btn-light mb-0"><i class="fab fa-fw fa-facebook-f text-facebook me-2"></i>Sign in with Facebook</a>
-									</div>
-
 									<!-- Copyright -->
-									<div class="text-primary-hover mt-3 text-center"> Copyrights ©2023 Booking. Build by <a href="https://www.webestica.com/">Webestica</a>. </div>
+									<div class="text-primary-hover mt-3 text-center"> Made By Denise Pegha ©2025 </div>
 								</form>
 								<!-- Form END -->
 							</div>
