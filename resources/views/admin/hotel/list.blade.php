@@ -429,12 +429,12 @@
 								<!-- Overlay item -->
 								<div class="position-relative">
 									<!-- Image -->
-									<img src="{{ asset($hotel->image) }}" class="card-img-top" alt="Card image">
+									<img src="{{ asset($hotel->hotel_profile) }}" class="card-img-top" alt="Card image">
 									<!-- Overlay -->
 									<div class="card-img-overlay d-flex flex-column p-3">
 										<!-- Card overlay top -->
 										<div class="d-flex justify-content-between align-items-center">
-											<div class="badge text-bg-dark"><i class="bi fa-fw bi-star-fill me-2 text-warning"></i>{{ $hotel->nombres_etoiles }}</div>
+											<div class="badge text-bg-dark"><i class="bi fa-fw bi-star-fill me-2 text-warning"></i>{{ $hotel->star_number }}</div>
 											<!-- Buttons -->
 											<div class="list-inline-item dropdown">
 												<!-- Dropdown button -->
@@ -454,10 +454,10 @@
 								<!-- Card body START -->
 								<div class="card-body px-3">
 									<!-- Title -->
-									<h5 class="card-title mb-1"><a href="admin-booking-detail.html.htm">{{ $hotel->nom_hotel }}</a></h5>
+									<h5 class="card-title mb-1"><a href="admin-booking-detail.html.htm">{{ $hotel->hotel_name }}</a></h5>
 									<ul class="list-group list-group-borderless small mt-2 mb-0">
 										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-location fa-fw me-2"></i>{{ $hotel->ville }}
+											<i class="fa-solid fa-location fa-fw me-2"></i>{{ $hotel->town }}
 										</li>
 										
 									</ul>
@@ -517,17 +517,17 @@
 									<div class="d-flex align-items-center">
 										<!-- Image -->
 										<div class="w-80px flex-shrink-0">
-											<img src="{{ asset($hotel->image) }}" class="rounded" alt="">
+											<img src="{{ asset($hotel->hotel_profile) }}" class="rounded" alt="">
 										</div>
 										<!-- Title -->
-										<h6 class="mb-0 ms-2">{{ $hotel->nom_hotel }}</h6>
+										<h6 class="mb-0 ms-2">{{ $hotel->hotel_name }}</h6>
 									</div>
 								</div>	
 		
 								<!-- Data item -->
 								<div class="col">
 									<small class="d-block d-xxl-none">Ville:</small>
-									<h6 class="mb-0 fw-normal">{{ $hotel->ville }}</h6>
+									<h6 class="mb-0 fw-normal">{{ $hotel->town }}</h6>
 								</div>
 		
 								<!-- Data item -->

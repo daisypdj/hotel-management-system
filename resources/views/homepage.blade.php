@@ -1,208 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Hotel Management System</title>
-
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Webestica.com">
-    <meta name="description" content="Booking - Multipurpose Online Booking Theme">
-
-    <!-- Dark mode -->
-    <script>
-        const storedTheme = localStorage.getItem('theme')
-
-        const getPreferredTheme = () => {
-            if (storedTheme) {
-                return storedTheme
-            }
-            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-        }
-
-        const setTheme = function(theme) {
-            if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.documentElement.setAttribute('data-bs-theme', 'dark')
-            } else {
-                document.documentElement.setAttribute('data-bs-theme', theme)
-            }
-        }
-
-        setTheme(getPreferredTheme())
-
-        window.addEventListener('DOMContentLoaded', () => {
-            var el = document.querySelector('.theme-icon-active');
-            if (el != 'undefined' && el != null) {
-                const showActiveTheme = theme => {
-                    const activeThemeIcon = document.querySelector('.theme-icon-active use')
-                    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-                    const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
-
-                    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-                        element.classList.remove('active')
-                    })
-
-                    btnToActive.classList.add('active')
-                    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
-                }
-
-                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-                    if (storedTheme !== 'light' || storedTheme !== 'dark') {
-                        setTheme(getPreferredTheme())
-                    }
-                })
-
-                showActiveTheme(getPreferredTheme())
-
-                document.querySelectorAll('[data-bs-theme-value]')
-                    .forEach(toggle => {
-                        toggle.addEventListener('click', () => {
-                            const theme = toggle.getAttribute('data-bs-theme-value')
-                            localStorage.setItem('theme', theme)
-                            setTheme(theme)
-                            showActiveTheme(theme)
-                        })
-                    })
-
-            }
-        })
-    </script>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link rel="stylesheet" href="css2-1?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap">
-
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/font-awesome/css/all.min-1.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons-1.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/tiny-slider/tiny-slider.css') }}">
-    <link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox-1.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendor/flatpickr/css/flatpickr.min-1.css">
-    <link rel="stylesheet" type="text/css" href="assets/vendor/choices/css/choices.min.css">
-
-
-    <!-- Theme CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-</head>
-
-<body class="has-navbar-mobile">
-
-    <!-- Header START -->
-    <header class="navbar-light header-sticky">
-        <!-- Logo Nav START -->
-        <nav class="navbar navbar-expand-xl">
-            <div class="container">
-                <!-- Logo START -->
-                <a class="navbar-brand" href="index.html-1.htm">
-                    <img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">
-                    <img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo">
-                </a>
-                <!-- Logo END -->
-
-                <!-- Responsive navbar toggler -->
-                <button class="navbar-toggler ms-auto ms-sm-0 p-0 p-sm-2" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-animation">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                    <span class="d-none d-sm-inline-block small">Menu</span>
-                </button>
-
-                <!-- Responsive category toggler -->
-                <button class="navbar-toggler ms-sm-auto mx-3 me-md-0 p-0 p-sm-2" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarCategoryCollapse"
-                    aria-controls="navbarCategoryCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-grid-3x3-gap-fill fa-fw"></i><span
-                        class="d-none d-sm-inline-block small">Category</span>
-                </button>
-
-                <!-- Main navbar START -->
-                <div class="navbar-collapse collapse" id="navbarCollapse">
-                    <ul class="navbar-nav navbar-nav-scroll me-auto">
-
-                        <!-- Nav item Listing -->
-
-                        <!-- Nav item Pages -->
-                        <li class="nav-item dropdown">
-                        </li>
-
-
-                        <!-- Nav item link-->
-
-                    </ul>
-                </div>
-                <!-- Main navbar END -->
-
-                <!-- Nav category menu START -->
-                <div class="navbar-collapse collapse" id="navbarCategoryCollapse">
-                    <ul class="navbar-nav navbar-nav-scroll nav-pills-primary-soft text-center ms-auto p-2 p-xl-0">
-                        <!-- Nav item Hotel -->
-                        <li class="nav-item"> <a href="/login" class="nav-link bg-primary text-white active"
-                                href="index.html-1.htm">Login</a> </li>
-
-                        <!-- Nav item Flight -->
-                        <li class="nav-item"> <a class="nav-link" href="/register">Sign In</a> </li>
-
-                        <!-- Nav item Tour -->
-
-
-                        <!-- Nav item Cabs -->
-
-                    </ul>
-                </div>
-                <!-- Nav category menu END -->
-            </div>
-        </nav>
-        <!-- Logo Nav END -->
-    </header>
-    <!-- Header END -->
-
-    <!-- **************** MAIN CONTENT START **************** -->
-    <main>
-
-        <!-- =======================
-Main Banner START -->
-        <section class="pt-3 pt-lg-5">
-            <div class="container">
-                <!-- Content and Image START -->
-                <div class="row g-4 g-lg-5">
-                    <!-- Content -->
-                    <div class="col-lg-6 position-relative mb-4 mb-md-0">
-                        <!-- Title -->
-                        <h1 class="mb-4 mt-md-5 display-5">Find the top
-                            <span class="position-relative z-index-9">Hotels nearby.
-                                <!-- SVG START -->
-                                <span
-                                    class="position-absolute top-50 start-50 translate-middle z-index-n1 d-none d-md-block mt-4">
-                                    <svg width="390.5px" height="21.5px" viewbox="0 0 445.5 21.5">
-                                        <path class="fill-primary opacity-7"
-                                            d="M409.9,2.6c-9.7-0.6-19.5-1-29.2-1.5c-3.2-0.2-6.4-0.2-9.7-0.3c-7-0.2-14-0.4-20.9-0.5 c-3.9-0.1-7.8-0.2-11.7-0.3c-1.1,0-2.3,0-3.4,0c-2.5,0-5.1,0-7.6,0c-11.5,0-23,0-34.5,0c-2.7,0-5.5,0.1-8.2,0.1 c-6.8,0.1-13.6,0.2-20.3,0.3c-7.7,0.1-15.3,0.1-23,0.3c-12.4,0.3-24.8,0.6-37.1,0.9c-7.2,0.2-14.3,0.3-21.5,0.6 c-12.3,0.5-24.7,1-37,1.5c-6.7,0.3-13.5,0.5-20.2,0.9C112.7,5.3,99.9,6,87.1,6.7C80.3,7.1,73.5,7.4,66.7,8 C54,9.1,41.3,10.1,28.5,11.2c-2.7,0.2-5.5,0.5-8.2,0.7c-5.5,0.5-11,1.2-16.4,1.8c-0.3,0-0.7,0.1-1,0.1c-0.7,0.2-1.2,0.5-1.7,1 C0.4,15.6,0,16.6,0,17.6c0,1,0.4,2,1.1,2.7c0.7,0.7,1.8,1.2,2.7,1.1c6.6-0.7,13.2-1.5,19.8-2.1c6.1-0.5,12.3-1,18.4-1.6 c6.7-0.6,13.4-1.1,20.1-1.7c2.7-0.2,5.4-0.5,8.1-0.7c10.4-0.6,20.9-1.1,31.3-1.7c6.5-0.4,13-0.7,19.5-1.1c2.7-0.1,5.4-0.3,8.1-0.4 c10.3-0.4,20.7-0.8,31-1.2c6.3-0.2,12.5-0.5,18.8-0.7c2.1-0.1,4.2-0.2,6.3-0.2c11.2-0.3,22.3-0.5,33.5-0.8 c6.2-0.1,12.5-0.3,18.7-0.4c2.2-0.1,4.4-0.1,6.7-0.1c11.5-0.1,23-0.2,34.6-0.4c7.2-0.1,14.4-0.1,21.6-0.1c12.2,0,24.5,0.1,36.7,0.1 c2.4,0,4.8,0.1,7.2,0.2c6.8,0.2,13.5,0.4,20.3,0.6c5.1,0.2,10.1,0.3,15.2,0.4c3.6,0.1,7.2,0.4,10.8,0.6c10.6,0.6,21.1,1.2,31.7,1.8 c2.7,0.2,5.4,0.4,8,0.6c2.9,0.2,5.8,0.4,8.6,0.7c0.4,0.1,0.9,0.2,1.3,0.3c1.1,0.2,2.2,0.2,3.2-0.4c0.9-0.5,1.6-1.5,1.9-2.5 c0.6-2.2-0.7-4.5-2.9-5.2c-1.9-0.5-3.9-0.7-5.9-0.9c-1.4-0.1-2.7-0.3-4.1-0.4c-2.6-0.3-5.2-0.4-7.9-0.6 C419.7,3.1,414.8,2.9,409.9,2.6z">
-                                        </path>
-                                    </svg>
-                                </span>
-                                <!-- SVG END -->
-                            </span>
-                        </h1>
-                        <!-- Info -->
-                        <p class="mb-4">We bring you not only a stay option, but an experience in your budget to
-                            enjoy the luxury.</p>
-
-                        <!-- Buttons -->
-                        <div class="hstack gap-4 flex-wrap align-items-center">
-                            </a>
-                        </div>
-                    </div>
-=======
 
 @extends("layouts.frontoffice.main")
 
@@ -245,7 +40,6 @@ Main Banner START -->
 
 					</div>
 				</div>
->>>>>>> refs/remotes/origin/main
 
                     <!-- Image -->
                     <div class="col-lg-6 position-relative">
@@ -303,17 +97,6 @@ Main Banner START -->
                             </svg>
                         </figure>
 
-<<<<<<< HEAD
-                        <!-- Support guid -->
-                        <div class="position-absolute top-0 end-0 z-index-1 mt-n4">
-                            <div class="bg-blur border border-light rounded-3 text-center shadow-lg p-3">
-                                <!-- Title -->
-                                <i class="bi bi-headset text-danger fs-3"></i>
-                                <h5 class="text-dark mb-1">24 / 7</h5>
-                                <h6 class="text-dark fw-light small mb-0">Guide Supports</h6>
-                            </div>
-                        </div>
-=======
 					<!-- Support guid -->
 					<div class="position-absolute top-0 end-0 z-index-1 mt-n4">
 						<div class="bg-blur border border-light rounded-3 text-center shadow-lg p-3">
@@ -323,7 +106,6 @@ Main Banner START -->
 							<h6 class="text-dark fw-light small mb-0">Support Client</h6>
 						</div>
 					</div>
->>>>>>> refs/remotes/origin/main
 
                         <!-- Round image group -->
                         <div
@@ -337,62 +119,6 @@ Main Banner START -->
                 </div>
                 <!-- Content and Image END -->
 
-<<<<<<< HEAD
-                <!-- Search START -->
-                <div class="row">
-                    <div class="col-xl-10 position-relative mt-n3 mt-xl-n9">
-                        <!-- Title -->
-                        <h6 class="d-none d-xl-block mb-3">Check Availability</h6>
-
-                        <!-- Booking from START -->
-                        <form class="card shadow rounded-3 position-relative p-4 pe-md-5 pb-5 pb-md-4">
-                            <div class="row g-4 align-items-center">
-                                <!-- Location -->
-                                <div class="col-lg-4">
-                                    <div class="form-control-border form-control-transparent form-fs-md d-flex">
-                                        <!-- Icon -->
-                                        <i class="bi bi-geo-alt fs-3 me-2 mt-2"></i>
-                                        <!-- Select input -->
-                                        <div class="flex-grow-1">
-                                            <label class="form-label">Location</label>
-                                            <select class="form-select js-choice" data-search-enabled="true">
-                                                <option value="">Select location</option>
-                                                <option>San Jacinto, USA</option>
-                                                <option>North Dakota, Canada</option>
-                                                <option>West Virginia, Paris</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Check in -->
-                                <div class="col-lg-4">
-                                    <div class="d-flex">
-                                        <!-- Icon -->
-                                        <i class="bi bi-calendar fs-3 me-2 mt-2"></i>
-                                        <!-- Date input -->
-                                        <div class="form-control-border form-control-transparent form-fs-md">
-                                            <label class="form-label">Check in - out</label>
-                                            <input type="text" class="form-control flatpickr" data-mode="range"
-                                                placeholder="Select date" value="19 Sep to 28 Sep">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Guest -->
-                                <div class="col-lg-4">
-                                    <div class="form-control-border form-control-transparent form-fs-md d-flex">
-                                        <!-- Icon -->
-                                        <i class="bi bi-person fs-3 me-2 mt-2"></i>
-                                        <!-- Dropdown input -->
-                                        <div class="w-100">
-                                            <label class="form-label">Guests & rooms</label>
-                                            <div class="dropdown guest-selector me-2">
-                                                <input type="text"
-                                                    class="form-guest-selector form-control selection-result"
-                                                    value="2 Guests 1 Room" data-bs-auto-close="outside"
-                                                    data-bs-toggle="dropdown">
-=======
 		<!-- Search START -->
 		<div class="row">
 			<div class="col-xl-10 position-relative mt-n3 mt-xl-n9">
@@ -460,7 +186,6 @@ Main Banner START -->
 									<label class="form-label">Guests & rooms</label>
 									<div class="dropdown guest-selector me-2">
 										<input type="text" name="room" class="form-guest-selector form-control selection-result"  data-bs-auto-close="outside" data-bs-toggle="dropdown">
->>>>>>> refs/remotes/origin/main
 
                                                 <!-- dropdown items -->
                                                 <ul class="dropdown-menu guest-selector-dropdown">
@@ -513,37 +238,6 @@ Main Banner START -->
                                                             <small>Max room 8</small>
                                                         </div>
 
-<<<<<<< HEAD
-                                                        <div class="hstack gap-1 align-items-center">
-                                                            <button type="button"
-                                                                class="btn btn-link room-remove p-0 mb-0"><i
-                                                                    class="bi bi-dash-circle fs-5 fa-fw"></i></button>
-                                                            <h6 class="guest-selector-count mb-0 rooms">1</h6>
-                                                            <button type="button"
-                                                                class="btn btn-link room-add p-0 mb-0"><i
-                                                                    class="bi bi-plus-circle fs-5 fa-fw"></i></button>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Button -->
-                            <div class="btn-position-md-middle">
-                                <a class="icon-lg btn btn-round btn-primary mb-0" href="#"><i
-                                        class="bi bi-search fa-fw"></i></a>
-                            </div>
-                        </form>
-                        <!-- Booking from END -->
-                    </div>
-                </div>
-                <!-- Search END -->
-            </div>
-        </section>
-        <!-- =======================
-=======
 												<div class="hstack gap-1 align-items-center">
 													<button type="button" class="btn btn-link room-remove p-0 mb-0"><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
 													<h6 class="guest-selector-count mb-0 rooms">1</h6>
@@ -569,7 +263,6 @@ Main Banner START -->
 	</div>
 </section>
 <!-- =======================
->>>>>>> refs/remotes/origin/main
 Main Banner END -->
 
         <!-- =======================
@@ -884,47 +577,6 @@ About START -->
                     </div>
                     <!-- Left side END -->
 
-<<<<<<< HEAD
-                    <!-- Right side START -->
-                    <div class="col-lg-6">
-                        <h2 class="mb-3 mb-lg-5">The Best Holidays Start Here!</h2>
-                        <p class="mb-3 mb-lg-5">Book your hotel with us and don't forget to grab an awesome hotel deal
-                            to save massive on your stay.</p>
-
-                        <!-- Features START -->
-                        <div class="row g-4">
-                            <!-- Item -->
-                            <div class="col-sm-6">
-                                <div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle"><i
-                                        class="fa-solid fa-utensils"></i></div>
-                                <h5 class="mt-2">Quality Food</h5>
-                                <p class="mb-0">Departure defective arranging rapturous did. Conduct denied adding
-                                    worthy little.</p>
-                            </div>
-                            <!-- Item -->
-                            <div class="col-sm-6">
-                                <div class="icon-lg bg-danger bg-opacity-10 text-danger rounded-circle"><i
-                                        class="bi bi-stopwatch-fill"></i></div>
-                                <h5 class="mt-2">Quick Services</h5>
-                                <p class="mb-0">Supposing so be resolving breakfast am or perfectly. </p>
-                            </div>
-                            <!-- Item -->
-                            <div class="col-sm-6">
-                                <div class="icon-lg bg-orange bg-opacity-10 text-orange rounded-circle"><i
-                                        class="bi bi-shield-fill-check"></i></div>
-                                <h5 class="mt-2">High Security</h5>
-                                <p class="mb-0">Arranging rapturous did believe him all had supported. </p>
-                            </div>
-                            <!-- Item -->
-                            <div class="col-sm-6">
-                                <div class="icon-lg bg-info bg-opacity-10 text-info rounded-circle"><i
-                                        class="bi bi-lightning-fill"></i></div>
-                                <h5 class="mt-2">24 Hours Alert</h5>
-                                <p class="mb-0">Rapturous did believe him all had supported.</p>
-                            </div>
-                        </div>
-                        <!-- Features END -->
-=======
 			<!-- Right side START -->
 			<div class="col-lg-6">
 				<h2 class="mb-3 mb-lg-5">Les meilleures vacances commencent ici !</h2>
@@ -958,7 +610,6 @@ About START -->
 					</div>
 				</div>
 				<!-- Features END -->
->>>>>>> refs/remotes/origin/main
 
                     </div>
                     <!-- Right side END -->
@@ -973,143 +624,6 @@ Featured Hotels START -->
         <section>
             <div class="container">
 
-<<<<<<< HEAD
-                <!-- Title -->
-                <div class="row mb-4">
-                    <div class="col-12 text-center">
-                        <h2 class="mb-0">Featured Hotels</h2>
-                    </div>
-                </div>
-
-                <div class="row g-4">
-                    <!-- Hotel item -->
-                    <div class="col-sm-6 col-xl-3">
-                        <!-- Card START -->
-                        <div class="card card-img-scale overflow-hidden bg-transparent">
-                            <!-- Image and overlay -->
-                            <div class="card-img-scale-wrapper rounded-3">
-                                <!-- Image -->
-                                <img src="assets/images/category/hotel/01.jpg" class="card-img" alt="hotel image">
-                                <!-- Badge -->
-                                <div class="position-absolute bottom-0 start-0 p-3">
-                                    <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
-                                            class="bi bi-geo-alt me-2"></i>New York</div>
-                                </div>
-                            </div>
-
-                            <!-- Card body -->
-                            <div class="card-body px-2">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">Baga
-                                        Comfort</a></h5>
-                                <!-- Price and rating -->
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="text-success mb-0">$455 <small class="fw-light">/starting at</small>
-                                    </h6>
-                                    <h6 class="mb-0">4.5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card END -->
-                    </div>
-
-                    <!-- Hotel item -->
-                    <div class="col-sm-6 col-xl-3">
-                        <!-- Card START -->
-                        <div class="card card-img-scale overflow-hidden bg-transparent">
-                            <!-- Image and overlay -->
-                            <div class="card-img-scale-wrapper rounded-3">
-                                <!-- Image -->
-                                <img src="assets/images/category/hotel/02.jpg" class="card-img" alt="hotel image">
-                                <!-- Badge -->
-                                <div class="position-absolute bottom-0 start-0 p-3">
-                                    <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
-                                            class="bi bi-geo-alt me-2"></i>California</div>
-                                </div>
-                            </div>
-
-                            <!-- Card body -->
-                            <div class="card-body px-2">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">New
-                                        Apollo Hotel</a></h5>
-                                <!-- Price and rating -->
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="text-success mb-0">$585 <small class="fw-light">/starting at</small>
-                                    </h6>
-                                    <h6 class="mb-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card END -->
-                    </div>
-
-                    <!-- Hotel item -->
-                    <div class="col-sm-6 col-xl-3">
-                        <!-- Card START -->
-                        <div class="card card-img-scale overflow-hidden bg-transparent">
-                            <!-- Image and overlay -->
-                            <div class="card-img-scale-wrapper rounded-3">
-                                <!-- Image -->
-                                <img src="assets/images/category/hotel/03.jpg" class="card-img" alt="hotel image">
-                                <!-- Badge -->
-                                <div class="position-absolute bottom-0 start-0 p-3">
-                                    <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
-                                            class="bi bi-geo-alt me-2"></i>Los Angeles</div>
-                                </div>
-                            </div>
-
-                            <!-- Card body -->
-                            <div class="card-body px-2">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">New Age
-                                        Hotel</a></h5>
-                                <!-- Price and rating -->
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="text-success mb-0">$385 <small class="fw-light">/starting at</small>
-                                    </h6>
-                                    <h6 class="mb-0">4.6<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card END -->
-                    </div>
-
-                    <!-- Hotel item -->
-                    <div class="col-sm-6 col-xl-3">
-                        <!-- Card START -->
-                        <div class="card card-img-scale overflow-hidden bg-transparent">
-                            <!-- Image and overlay -->
-                            <div class="card-img-scale-wrapper rounded-3">
-                                <!-- Image -->
-                                <img src="assets/images/category/hotel/04.jpg" class="card-img" alt="hotel image">
-                                <!-- Badge -->
-                                <div class="position-absolute bottom-0 start-0 p-3">
-                                    <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
-                                            class="bi bi-geo-alt me-2"></i>Chicago</div>
-                                </div>
-                            </div>
-
-                            <!-- Card body -->
-                            <div class="card-body px-2">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">Helios
-                                        Beach Resort</a></h5>
-                                <!-- Price and rating -->
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="text-success mb-0">$665 <small class="fw-light">/starting at</small>
-                                    </h6>
-                                    <h6 class="mb-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card END -->
-                    </div>
-                </div> <!-- Row END -->
-            </div>
-        </section>
-        <!-- =======================
-=======
 		<!-- Title -->
 		<div class="row mb-4">
 			<div class="col-12 text-center">
@@ -1153,47 +667,12 @@ Featured Hotels START -->
 	</div>
 </section>
 <!-- =======================
->>>>>>> refs/remotes/origin/main
 Featured Hotels END -->
 
         <!-- =======================
 Client START -->
-<<<<<<< HEAD
-        <section class="py-0 py-md-5">
-            <div class="container">
-                <div class="row g-4 g-lg-7 justify-content-center align-items-center">
-                    <!-- Image -->
-                    <div class="col-5 col-sm-3 col-xl-2">
-                        <img src="assets/images/client/01.svg" class="grayscale" alt="">
-                    </div>
-                    <!-- Image -->
-                    <div class="col-5 col-sm-3 col-xl-2">
-                        <img src="assets/images/client/02.svg" class="grayscale" alt="">
-                    </div>
-                    <!-- Image -->
-                    <div class="col-5 col-sm-3 col-xl-2">
-                        <img src="assets/images/client/03.svg" class="grayscale" alt="">
-                    </div>
-                    <!-- Image -->
-                    <div class="col-5 col-sm-3 col-xl-2">
-                        <img src="assets/images/client/04.svg" class="grayscale" alt="">
-                    </div>
-                    <!-- Image -->
-                    <div class="col-5 col-sm-3 col-xl-2">
-                        <img src="assets/images/client/05.svg" class="grayscale" alt="">
-                    </div>
-                    <!-- Image -->
-                    <div class="col-5 col-sm-3 col-xl-2">
-                        <img src="assets/images/client/06.svg" class="grayscale" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- =======================
-=======
 
 <!-- =======================
->>>>>>> refs/remotes/origin/main
 Client END -->
 
         <!-- =======================
@@ -1330,207 +809,8 @@ Testimonials END -->
 
         <!-- =======================
 Near by START -->
-<<<<<<< HEAD
-        <section>
-            <div class="container">
-                <!-- Title -->
-                <div class="row mb-4">
-                    <div class="col-12 text-center">
-                        <h2 class="mb-0">Explore Nearby</h2>
-                    </div>
-                </div>
-
-                <div class="row g-4 g-md-5">
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/category/hotel/nearby/01.jpg" class="rounded-circle"
-                                alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">San Francisco</a>
-                                </h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/category/hotel/nearby/02.jpg" class="rounded-circle"
-                                alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">Los Angeles</a></h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/category/hotel/nearby/03.jpg" class="rounded-circle"
-                                alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">Miami</a></h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/category/hotel/nearby/04.jpg" class="rounded-circle"
-                                alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">Sanjosh</a></h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/category/hotel/nearby/05.jpg" class="rounded-circle"
-                                alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">New York</a></h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/category/hotel/nearby/06.jpg" class="rounded-circle"
-                                alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">North Justen</a>
-                                </h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/category/hotel/nearby/07.jpg" class="rounded-circle"
-                                alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">Rio</a></h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/category/hotel/nearby/08.jpg" class="rounded-circle"
-                                alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">Las Vegas</a></h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/category/hotel/nearby/09.jpg" class="rounded-circle"
-                                alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">Texas</a></h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/category/hotel/nearby/10.jpg" class="rounded-circle"
-                                alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">Chicago</a></h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/category/hotel/nearby/11.jpg" class="rounded-circle"
-                                alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">New Keagan</a>
-                                </h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/category/hotel/nearby/01.jpg" class="rounded-circle"
-                                alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">Oslo</a></h5>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-                </div> <!-- Row END -->
-            </div>
-        </section>
-        <!-- =======================
-=======
 
 <!-- =======================
->>>>>>> refs/remotes/origin/main
 Near by END -->
 
         <!-- =======================
@@ -1551,73 +831,6 @@ Download app START -->
         <!-- =======================
 Download app END -->
 
-<<<<<<< HEAD
-    </main>
-    <!-- **************** MAIN CONTENT END **************** -->
-
-    <!-- =======================
-Footer START -->
-    <footer class="bg-dark py-3 px-3">
-        <div class="text-muted text-center"> Copyrights ©2023 Booking. Build by <a
-                href="https://www.webestica.com/" class="text-muted">Webestica</a>. </div>
-    </footer>
-    <!-- =======================
-Footer END -->
-
-    <!-- Back to top -->
-    <div class="back-top"></div>
-
-    <!-- Navbar mobile START -->
-    <div class="navbar navbar-mobile">
-        <ul class="navbar-nav">
-            <!-- Nav item Home -->
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html-1.htm"><i class="bi bi-house-door fa-fw"></i>
-                    <span class="mb-0 nav-text">Home</span>
-                </a>
-            </li>
-
-            <!-- Nav item My Trips -->
-            <li class="nav-item">
-                <a class="nav-link" href="account-bookings.html.htm"><i class="bi bi-briefcase fa-fw"></i>
-                    <span class="mb-0 nav-text">My Trips</span>
-                </a>
-            </li>
-
-            <!-- Nav item Offer -->
-            <li class="nav-item">
-                <a class="nav-link" href="offer-detail.html.htm"><i class="bi bi-percent fa-fw"></i>
-                    <span class="mb-0 nav-text">Offer</span>
-                </a>
-            </li>
-
-            <!-- Nav item Account -->
-            <li class="nav-item">
-                <a class="nav-link" href="account-profile.html.htm"><i class="bi bi-person-circle fa-fw"></i>
-                    <span class="mb-0 nav-text">Account</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!-- Navbar mobile END -->
-
-    <!-- Bootstrap JS -->
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Vendors -->
-    <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.js"></script>
-    <script src="assets/vendor/flatpickr/js/flatpickr.min.js"></script>
-    <script src="assets/vendor/choices/js/choices.min.js"></script>
-
-    <!-- ThemeFunctions -->
-    <script src="assets/js/functions.js"></script>
-
-</body>
-
-</html>
-=======
 </main>
 <!-- **************** MAIN CONTENT END **************** -->
 @endsection
->>>>>>> refs/remotes/origin/main
