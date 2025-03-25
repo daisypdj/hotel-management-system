@@ -46,8 +46,8 @@
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseguest" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="admin-guest-list.html">Listes des Utilisateurs</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="admin-guest-detail.html.htm">Creer un Utilisateur</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.customers.index') }}">Listes des Utilisateurs</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.customers.create') }}">Creer un Utilisateur</a></li>
                     </ul>
                 </li>
 

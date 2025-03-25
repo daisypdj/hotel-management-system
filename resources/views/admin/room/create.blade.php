@@ -1,7 +1,7 @@
 @extends("layouts.backoffice.admin.main-admin")
 
 @section('title')
-Ajouter un Hotel
+Ajouter une chambre
 @endsection
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/choices/css/choices.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/dropzone/css/dropzone.css') }}">
