@@ -16,7 +16,14 @@ liste des Chambres
                 <!-- Banner title -->
                 <div class="row my-2 my-xl-5">
                     <div class="col-md-8 mx-auto">
-                        <h1 class="text-center text-white">150 Hotels in New York</h1>
+                        <h1 class="text-center text-white">
+
+                        @if($rooms->count() > 0)
+                            {{ $rooms->count() }} Chambres disponibles
+                        @else
+                            Aucune chambre disponible
+                        @endif
+                        </h1>
                     </div>
                 </div>
 
@@ -447,7 +454,7 @@ liste des Chambres
                             <div class="tiny-slider arrow-round arrow-xs arrow-dark rounded-2 overflow-hidden">
                                 <div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-dots="false" data-items="1">
                                     <!-- Image item -->
-                                    <div><img src="{{ asset($room->image) }}" alt="Card image"></div>
+                                    <div><img src="{{ asset($room->Room_profile) }}" alt="Card image"></div>
 
 
                                 </div>

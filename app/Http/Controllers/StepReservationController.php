@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Carbon\Carbon;
+use App\Models\Room;
 use App\Models\Hotel;
 use App\Models\Room_type;
 use Illuminate\Http\Request;
@@ -31,12 +32,26 @@ class StepReservationController extends Controller
     public function stepTwo($id,Request $request){
         $classe=$request->session()->get('classe');
         $rooms=DB::table('rooms')
-                ->join('room__types','rooms.room__type_id','room__types.id')
-                ->select('rooms.id','rooms.hotel_id','rooms.image','room__types.title','room__types.price','room__types.adult_capacity','room__types.kids_capacity')
-                ->where('room__types.title',$classe)
+                ->join('room_types','rooms.room_type_id','room_types.id')
+                ->select('rooms.id','rooms.hotel_id','rooms.Room_profile','room_types.title','room_types.price','room_types.adult_capacity','room_types.kids_capacity')
+                ->where('room_types.title',$classe)
                 ->where('rooms.hotel_id',$id)
                 ->get();
 
             return view('Hotel.step-two',compact('rooms'));
+    }
+
+    public function stepThree($id,Request $request){
+        $checkIn=$request->session()->get('checkIn');
+        $checkOut=$request->session()->get('checkOut');
+        $duree=$request->session()->get('duree');
+        $hotelId=$request->session()->get('id');
+        $chambre=Room::find($id);
+        $request->session()->put('chambreId',$id);
+        $hotel=Hotel::find($chambre->hotel_id);
+        $room_type=Room_type::find($chambre->room_type_id);
+        //return $hotel;
+        //return $room_type;
+        return view('Hotel.step-three',compact('checkIn','checkOut','hotel','room_type','duree','chambre'));
     }
 }

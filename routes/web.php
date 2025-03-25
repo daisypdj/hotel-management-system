@@ -27,7 +27,7 @@ use App\Http\Controllers\customer\ReservationController as CustomerReservationCo
 
 Route::get('step-one/list-hotels',[StepReservationController::class,'stepOne'])->name('search');
 Route::get('step-two/list-rooms/{id}',[StepReservationController::class,'stepTwo'])->name('step-two');
-
+Route::get('step-three/list-rooms/{id}',[StepReservationController::class,'stepThree'])->name('step-three');
 Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(function(){
 
     Route::get('dashboard',[DashboardController::class,'index'])->name('dashboard');
