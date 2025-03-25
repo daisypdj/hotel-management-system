@@ -45,7 +45,7 @@ Reserver Rapidement
                                         <select name="hotel" class="form-select js-choice h5" data-search-enabled="true" aria-label=".form-select-sm">
                                             <option value="">Select location</option>
                                             @foreach ($hotels as $hotel)
-                                                <option value="{{ $hotel->id }}">{{ $hotel->nom_hotel }}</option>
+                                                <option value="{{ $hotel->id }}">{{ $hotel->hotel_name }}</option>
                                             @endforeach
 
 

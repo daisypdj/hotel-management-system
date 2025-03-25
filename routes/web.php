@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\RoomController;
 use App\Http\Controllers\Admin\HotelController;
 use App\Http\Controllers\Admin\CustomerController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\StepReservationController;
 use App\Http\Controllers\Admin\ReservationController;
 use App\Http\Controllers\customer\DashboardController as CustomerDashboard;
 use App\Http\Controllers\Gerant\DashboardController as GerantDashboardController;
@@ -24,8 +25,8 @@ use App\Http\Controllers\customer\ReservationController as CustomerReservationCo
 |
 */
 
-Route::get('step-one/list-hotels',[HotelController::class,'stepOne'])->name('search');
-Route::get('step-two/list-rooms/{id}',[HotelController::class,'stepTwo'])->name('step-two');
+Route::get('step-one/list-hotels',[StepReservationController::class,'stepOne'])->name('search');
+Route::get('step-two/list-rooms/{id}',[StepReservationController::class,'stepTwo'])->name('step-two');
 
 Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(function(){
 
