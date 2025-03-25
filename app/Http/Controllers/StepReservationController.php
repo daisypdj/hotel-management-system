@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use App\Models\Room;
 use App\Models\Hotel;
 use App\Models\Room_type;
+use App\Models\Reservation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -52,6 +53,28 @@ class StepReservationController extends Controller
         $room_type=Room_type::find($chambre->room_type_id);
         //return $hotel;
         //return $room_type;
-        return view('Hotel.step-three',compact('checkIn','checkOut','hotel','room_type','duree','chambre'));
+        return view('Hotel.step-final',compact('checkIn','checkOut','hotel','room_type','duree','chambre'));
+    }
+
+    public function stepFinal(Request $request){
+
+        if($request->session()->has('reservation')){
+            $request->session()->forget('reservation');
+        }
+        $reservation=Reservation::create([
+            'chambre_id'=>$request->chambre_id,
+            'check_in'=>$request->check_in,
+            'check_out'=>$request->check_out,
+            'duration_of_stay'=>$request->duree,
+            'total_price'=>$request->price_reser,
+            'user_id'=>auth()->user()->id,
+            'status'=>1,
+        ]);
+        if($request->session()->has('reservation')){
+            $request->session()->forget('reservation');
+        }
+        $request->session()->put('reservation', $reservation);
+
+        return to_route('customer.confirm');
     }
 }
