@@ -58,7 +58,7 @@
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseres" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="admin-agent-list.html">Listes des Reservations</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.reservations.index') }}">Listes des Reservations</a></li>
 
                     </ul>
                 </li>

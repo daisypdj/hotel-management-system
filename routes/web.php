@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\RoomController;
 use App\Http\Controllers\Admin\HotelController;
 use App\Http\Controllers\Admin\CustomerController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ReservationController;
 use App\Http\Controllers\Gerant\DashboardController as GerantDashboardController;
 
 /*
@@ -30,6 +31,7 @@ Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(func
     Route::resource('hotels',HotelController::class);
     Route::resource('rooms',RoomController::class);
     Route::resource('customers',CustomerController::class);
+    Route::get('reservations',[ReservationController::class,'index'])->name('reservations.index');
 });
 
 Route::middleware('auth')->group(function () {
