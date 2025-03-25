@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\customer;
 
+use App\Models\Room_type;
+use App\Models\Hotel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
@@ -19,5 +21,12 @@ class ReservationController extends Controller
                         ->where('reservations.status',1)
                         ->get();
         return view('customer.my-reservations',compact('reservations'));
+    }
+
+    public function fast(){
+
+        $hotels=Hotel::all();
+        $classes=Room_Type::all();
+        return view('customer.reservation-fast',compact('hotels','classes'));
     }
 }
