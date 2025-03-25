@@ -77,4 +77,12 @@ class StepReservationController extends Controller
 
         return to_route('customer.confirm');
     }
+    public function confirm(Request $request){
+
+        $reservation=$request->session()->get('reservation');
+        $chambre=Room::find($reservation->chambre_id);
+        $hotel=Hotel::find($chambre->hotel_id);
+        //return $hotel;
+        return view('customer.booking-confirm',compact('reservation','hotel'));
+    }
 }
