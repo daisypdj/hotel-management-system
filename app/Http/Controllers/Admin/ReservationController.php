@@ -2,20 +2,13 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Room;
-use App\Models\Hotel;
-use App\Models\Reservation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
-class DashboardController extends Controller
+class ReservationController extends Controller
 {
     public function index(){
-        $hotelCount=Hotel::count();
-        $roomCount=Room::count();
-        $reservationCount=Reservation::where('status',1)->count();
-
         $reservations=DB::table('rooms')
                         ->join('reservations','rooms.id','reservations.room_id')
                         ->join('hotels','hotels.id','rooms.hotel_id')
@@ -24,8 +17,6 @@ class DashboardController extends Controller
                         ->where('reservations.status',1)
                         ->take(5)
                         ->get();
-                    
-                        //return $reservations;
-        return view('admin.dashboard',compact('hotelCount','roomCount','reservationCount','reservations'));
+        return view('admin.reservation.index',compact('reservations'));
     }
 }
