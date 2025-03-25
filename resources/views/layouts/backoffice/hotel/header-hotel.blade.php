@@ -3,81 +3,38 @@
 	<nav class="navbar navbar-expand-xl">
 		<div class="container">
 			<!-- Logo START -->
-			<a class="navbar-brand" href="{{ route('homepage') }}">
-				<img class="light-mode-item navbar-brand-item" src="{{asset('assets/images/logo-hotel.svg')}}" alt="logo" style="width: 100px;height:100px;">
-				<img class="dark-mode-item navbar-brand-item" src="{{asset('assets/images/logo-hotel-light.svg')}}" alt="logo">
+			<a class="navbar-brand" href="index.html-1.htm">
+				<img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">
+				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo">
 			</a>
 			<!-- Logo END -->
 
 			<!-- Responsive navbar toggler -->
-			<button class="navbar-toggler ms-auto ms-sm-0 p-0 p-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler ms-auto mx-3 me-md-0 p-0 p-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-animation">
 					<span></span>
 					<span></span>
 					<span></span>
 				</span>
-        <span class="d-none d-sm-inline-block small">Menu</span>
-			</button>
-
-			<!-- Responsive category toggler -->
-			<button class="navbar-toggler ms-sm-auto mx-3 me-md-0 p-0 p-sm-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCategoryCollapse" aria-controls="navbarCategoryCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="bi bi-grid-3x3-gap-fill fa-fw"></i><span class="d-none d-sm-inline-block small">Category</span>
 			</button>
 
 			<!-- Main navbar START -->
+			<div class="navbar-collapse collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll">
 
-			<!-- Main navbar END -->
-
-			<!-- Nav category menu START -->
-			<div class="navbar-collapse collapse" id="navbarCategoryCollapse">
-				<ul class="navbar-nav navbar-nav-scroll nav-pills-primary-soft text-center ms-auto p-2 p-xl-0">
-					<!-- Nav item Hotel -->
-
-                    @auth
-                    @if(auth()->user()->role_id==3)
-                    <li class="nav-item"> <a class="nav-link active" href="{{ route('customer.dashboard') }}"><i class="fa-solid fa-hotel me-2"></i>Dashboard</a>	</li>
-                    @endif
-                    @if(auth()->user()->role_id==1)
-                    <li class="nav-item"> <a class="nav-link active" href="{{ route('admin.dashboard') }}"><i class="fa-solid fa-hotel me-2"></i>Dashboard</a>	</li>
-                    @endif
-                    @if(auth()->user()->role_id==2)
-                    <li class="nav-item"> <a class="nav-link active" href="{{ route('gerant.dashboard') }}"><i class="fa-solid fa-hotel me-2"></i>Dashboard</a>	</li>
-                    @endif
-
-                @endauth
-					<!-- Nav item Flight -->
-                    @auth
-                    @if(auth()->user()->role_id==3)
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('customer.my-reservations.index') }}"><i class="fa-solid fa-sign-in me-2"></i>Mes Reservations</a>	</li>
-                    @endif
-
-                   
-
-                    @endauth
-                    @guest
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('register') }}"><i class="fa-solid fa-sign-in me-2"></i>S'enregistrer</a>	</li>
-                    @endguest
+					<!-- Nav item Listing -->
 
 
-					<!-- Nav item Tour -->
-                    @guest
-                    <li class="nav-item"> <a class="nav-link" href="{{ route('login') }}"><i class="fa-solid fa-sign-out me-2"></i>Connexion</a> </li>
-                @endguest
+					<!-- Nav item Pages -->
 
+					<!-- Nav item Account -->
 
-					<!-- Nav item Cabs -->
-                    @auth
-                    @if(auth()->user()->role_id=3)
-                    <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-solid fa-car me-2"></i>Reserver Rapidement</a></li>
-                    @endif
-                  
-                    @endauth
-                  
-                    
-					
+					<!-- Nav item Contact -->
+					<li class="nav-item"> <a class="nav-link" href="{{ route('homepage') }}">Accueil</a>	</li>
+                    <li class="nav-item"> <a class="nav-link" href="{{ route('gerant.dashboard') }}">Dashboard</a>	</li>
 				</ul>
 			</div>
-			<!-- Nav category menu END -->
+			<!-- Main navbar END -->
 
 			<!-- Profile and Notification START -->
 			<ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
@@ -87,7 +44,6 @@
 				<!-- Notification dropdown END -->
 
 				<!-- Profile dropdown START -->
-                @auth
                 <li class="nav-item ms-3 dropdown">
 					<!-- Avatar -->
 					<a class="avatar avatar-xs p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
@@ -112,7 +68,7 @@
 
 						<!-- Links -->
 						<li> <hr class="dropdown-divider"></li>
-						<li><a class="" href="#"><i class="bi bi-bookmark-check fa-fw me-2"></i>Mes Reservations</a></li>
+
 
                         <form method="POST" action="{{ route('logout') }}" id="logout-form">
                             @csrf
@@ -150,9 +106,23 @@
 					</ul>
 					<!-- Profile dropdown END -->
 				</li>
-                @endauth
-
 				<!-- Profile dropdown END -->
+
+				<!-- Button -->
+                <form method="POST" action="{{ route('logout') }}" id="logout-form">
+                    @csrf
+                  </form>
+
+
+
+
+				<li class="nav-item ms-3 d-none d-sm-block">
+                    <a class="h6 fw-light mb-0 text-body mb-0"  data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Sign out" href="{{ route('logout') }}" onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Log out
+                </a>
+
+				</li>
 			</ul>
 			<!-- Profile and Notification START -->
 

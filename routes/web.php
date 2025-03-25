@@ -11,7 +11,8 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\StepReservationController;
 use App\Http\Controllers\Admin\ReservationController;
 use App\Http\Controllers\customer\DashboardController as CustomerDashboard;
-use App\Http\Controllers\Gerant\DashboardController as GerantDashboardController;
+
+use App\Http\Controllers\Gerant\DashboardController as HotelDashboardController;
 use App\Http\Controllers\customer\ReservationController as CustomerReservationController;
 
 /*
@@ -37,6 +38,10 @@ Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(func
     Route::get('reservations',[ReservationController::class,'index'])->name('reservations.index');
 });
 
+Route::middleware(['auth','gerant'])->name('gerant.')->prefix('gerant')->group(function(){
+
+    Route::get('dashboard',[HotelDashboardController::class,'index'])->name('dashboard');
+});
 Route::middleware(['auth','customer'])->name('customer.')->prefix('customer')->group(function(){
 
     Route::get('dashboard',[CustomerDashboard::class,'index'])->name('dashboard');
@@ -52,7 +57,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    Route::get('gerant/dashboard',[GerantDashboardController::class,'index'])->name('gerant.dashboard');;
+    
     //Route::resource('rooms',RoomController::class);
 });
 
