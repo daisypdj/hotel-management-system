@@ -40,6 +40,10 @@ class AuthenticatedSessionController extends Controller
 
             return to_route('gerant.dashboard');
         }
+        if($user->role_id==3){
+
+            return to_route('customer.dashboard');
+        }
 
     }
 

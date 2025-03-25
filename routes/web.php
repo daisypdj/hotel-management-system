@@ -34,6 +34,17 @@ Route::middleware(['auth','admin'])->name('admin.')->prefix('admin')->group(func
     Route::get('reservations',[ReservationController::class,'index'])->name('reservations.index');
 });
 
+Route::middleware(['auth','customer'])->name('customer.')->prefix('customer')->group(function(){
+
+    //Route::get('dashboard',[CustomerDashboardController::class,'index'])->name('dashboard');
+    //Route::resource('my-reservations',ReservationController::class);
+    //Route::post('step-final',[HotelController::class,'stepFinal'])->name('step-final');
+    //Route::get('confirm/reservation',[HotelController::class,"confirm"])->name('confirm');
+    //Route::post('cancel/reservation/{id}',[ReservationController::class,'cancel'])->name('cancel');
+    Route::get('reserver-rapidement',[ReservationController::class,'fast'])->name('fast');
+    Route::post('reserver-rapidement',[ReservationController::class,'fastStore'])->name('fast.post');
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
