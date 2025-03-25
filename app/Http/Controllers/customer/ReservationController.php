@@ -18,7 +18,7 @@ class ReservationController extends Controller
                         ->join('reservations','rooms.id','reservations.room_id')
                         ->join('hotels','hotels.id','rooms.hotel_id')
                         
-                        ->select('reservations.id','reservations.check_in','reservations.check_out','reservations.status','reservations.price_reser','reservations.user_id','hotels.hotel_name','hotels.star_number','hotels.hotel_town','reservations.room_id','rooms.image')
+                        ->select('reservations.id','reservations.check_in','reservations.check_out','reservations.status','reservations.total_price','reservations.user_id','hotels.hotel_name','hotels.star_number','hotels.hotel_town','reservations.room_id','rooms.Room_profile')
                         ->where('reservations.user_id',auth()->user()->id)
                         ->where('reservations.status',1)
                         ->get();
