@@ -35,7 +35,7 @@ Main Banner START -->
 					<!-- Buttons -->
 					<div class="hstack gap-4 flex-wrap align-items-center">
 						<!-- Button -->
-						<a href="#" class="btn btn-primary-soft mb-0">Découvrir maintenant</a>
+						<a href="#" class="btn btn-primary-soft mb-0">Discover now</a>
 						<!-- Story button -->
 
 					</div>
@@ -123,7 +123,7 @@ Main Banner START -->
 		<div class="row">
 			<div class="col-xl-10 position-relative mt-n3 mt-xl-n9">
 				<!-- Title -->
-				<h6 class="d-none d-xl-block mb-3">Vérifier la disponibilité</h6>
+				<h6 class="d-none d-xl-block mb-3">Check the availability</h6>
 
 				<!-- Booking from START -->
 				<form class="card shadow rounded-3 position-relative p-4 pe-md-5 pb-5 pb-md-4" method="get" action="{{ route('search') }}">
@@ -154,7 +154,7 @@ Main Banner START -->
 								<div class="flex-grow-1">
 									<label class="form-label">Classe</label>
 									<select name="classe" class="form-select js-choice" data-search-enabled="true">
-                                        <option value="">Selectionnez la classe</option>
+                                        <option value="">Select class</option>
                                         @foreach ($classes as $classe)
                                             <option value="{{ $classe->title }}">{{ $classe->title }}</option>
                                         @endforeach
@@ -579,33 +579,33 @@ About START -->
 
 			<!-- Right side START -->
 			<div class="col-lg-6">
-				<h2 class="mb-3 mb-lg-5">Les meilleures vacances commencent ici !</h2>
-				<p class="mb-3 mb-lg-5">Réservez votre hôtel avec nous et n'oubliez pas de profiter d'une offre exceptionnelle pour économiser massivement sur votre séjour.</p>
+				<h2 class="mb-3 mb-lg-5">The best vacations start here!</h2>
+				<p class="mb-3 mb-lg-5">Book your hotel with us and don't forget to take advantage of an exceptional offer to save massively on your stay.</p>
 
 				<!-- Features START -->
 				<div class="row g-4">
 					<!-- Item -->
 					<div class="col-sm-6">
 						<div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle"><i class="fa-solid fa-utensils"></i></div>
-						<h5 class="mt-2">Aliments de qualité</h5>
+						<h5 class="mt-2">Quality food</h5>
 
 					</div>
 					<!-- Item -->
 					<div class="col-sm-6">
 						<div class="icon-lg bg-danger bg-opacity-10 text-danger rounded-circle"><i class="bi bi-stopwatch-fill"></i></div>
-						<h5 class="mt-2">Service Rapide</h5>
+						<h5 class="mt-2">Fast service</h5>
 
 					</div>
 					<!-- Item -->
 					<div class="col-sm-6">
 						<div class="icon-lg bg-orange bg-opacity-10 text-orange rounded-circle"><i class="bi bi-shield-fill-check"></i></div>
-						<h5 class="mt-2">Grande Sécurité</h5>
+						<h5 class="mt-2">High security</h5>
 
 					</div>
 					<!-- Item -->
 					<div class="col-sm-6">
 						<div class="icon-lg bg-info bg-opacity-10 text-info rounded-circle"><i class="bi bi-lightning-fill"></i></div>
-						<h5 class="mt-2">Disponibilité</h5>
+						<h5 class="mt-2">Availability</h5>
 
 					</div>
 				</div>

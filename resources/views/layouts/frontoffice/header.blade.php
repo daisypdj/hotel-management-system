@@ -55,13 +55,13 @@
 
                     @endauth
                     @guest
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('register') }}"><i class="fa-solid fa-sign-in me-2"></i>S'enregistrer</a>	</li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('register') }}"><i class="fa-solid fa-sign-in me-2"></i>Register</a>	</li>
                     @endguest
 
 
 					<!-- Nav item Tour -->
                     @guest
-                    <li class="nav-item"> <a class="nav-link" href="{{ route('login') }}"><i class="fa-solid fa-sign-out me-2"></i>Connexion</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="{{ route('login') }}"><i class="fa-solid fa-sign-out me-2"></i>Login</a> </li>
                 @endguest
 
 
