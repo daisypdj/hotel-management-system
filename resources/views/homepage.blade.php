@@ -641,7 +641,7 @@ Featured Hotels START -->
                         <!-- Image and overlay -->
                         <div class="card-img-scale-wrapper rounded-3">
                             <!-- Image -->
-                            <img src="{{ asset($hotel->hotel_profile) }}" class="card-img" alt="hotel image">
+                            <img style="height: 200px; width: 100%;" src="{{ asset($hotel->hotel_profile) }}" class="card-img" alt="hotel image">
                             <!-- Badge -->
                             <div class="position-absolute bottom-0 start-0 p-3">
                                 <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i class="bi bi-geo-alt me-2"></i>{{ $hotel->ville }}</div>
