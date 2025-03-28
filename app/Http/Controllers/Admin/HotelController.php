@@ -49,6 +49,7 @@ class HotelController extends Controller
 
         $hotel=new Hotel;
         $hotel->hotel_name=$request->hotel_name;
+        $hotel->hotel_description=$request->hotel_description;
         $hotel->hotel_town=$request->hotel_town;
         $hotel->hotel_phone=$request->hotel_phone;
         $hotel->hotel_profile=$pathImage;

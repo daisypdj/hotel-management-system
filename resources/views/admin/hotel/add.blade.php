@@ -54,6 +54,10 @@ Ajouter un Hotel
                                            
                                         </div>
                                     </div>
+                                    <div class="col-md-12">
+                                        <label class="form-label">Description</label>
+                                        <textarea class="form-control" name="hotel_description" required placeholder="Entrer la description de l'Hotel"></textarea>
+                                    </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Localisation</label>
                                         <select name="hotel_town" class="form-select js-choice">
@@ -71,7 +75,7 @@ Ajouter un Hotel
                                         <label class="form-label">Contact</label>
                                         <input class="form-control" name="hotel_phone" type="text" required placeholder="Enter le numero de telephone">
                                     </div>
-    
+                                    
                                     <!-- Email -->
                                     <div class="col-md-6">
                                         <label class="form-label">Adresse email</label>
