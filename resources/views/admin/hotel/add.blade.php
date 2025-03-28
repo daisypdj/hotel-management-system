@@ -9,6 +9,11 @@ Ajouter un Hotel
 
 <main>
 	
+@session('success')
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endsession
     <!-- =======================
     Page Banner START -->
     <section class="pt-4 pt-md-5 pb-0">
@@ -45,13 +50,13 @@ Ajouter un Hotel
                                     <div class="col-12">
                                         <label class="form-label">Nom Hotel</label>
                                         <div class="input-group">
-                                            <input type="text" required name="nom_hotel" class="form-control" placeholder="Entrer le nom de l'Hotel">
+                                            <input type="text" required name="hotel_name" class="form-control" placeholder="Entrer le nom de l'Hotel">
                                            
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Localisation</label>
-                                        <select name="localisation" class="form-select js-choice">
+                                        <select name="hotel_town" class="form-select js-choice">
                                             <option value="Douala">Douala</option>
                                             <option value="Yaoundé">Yaoundé</option>
                                             <option value="Bafoussam">Bafoussam</option>
@@ -59,12 +64,12 @@ Ajouter un Hotel
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Nombre d'etoile</label>
-                                        <input class="form-control" name="nombres_etoiles" required type="number" placeholder="" max="5" min="1" >
+                                        <input class="form-control" name="star_number" required type="number" placeholder="" max="5" min="1" >
                                     </div>
                                     <!-- Contact number -->
                                     <div class="col-md-6">
                                         <label class="form-label">Contact</label>
-                                        <input class="form-control" name="tel" type="text" required placeholder="Enter le numero de telephone">
+                                        <input class="form-control" name="hotel_phone" type="text" required placeholder="Enter le numero de telephone">
                                     </div>
     
                                     <!-- Email -->
@@ -112,7 +117,7 @@ Ajouter un Hotel
                                                 
                                                 
                                             </div>
-                                            <input type="file" name="image" required>
+                                            <input type="file" name="hotel_profile" required>
                                         </div> 
                                         <p class="small mb-0 mt-2"><b>Note:</b>Uniquement JPG, JPEG et PNG. Les dimensions suggérées sont 600px * 450px. L'image la plus grande sera recadrée au format 4:3 pour s'adapter à nos vignettes/présentations..</p>
                                     </div>
