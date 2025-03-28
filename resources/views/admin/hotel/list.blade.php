@@ -534,7 +534,7 @@
 								<div class="col">
 									<small class="d-block d-xxl-none">Nombre d'Etoile:</small>
 									<ul class="list-inline mb-0">
-                                        @for($i = 0; $i < $hotel->nombres_etoiles ; $i++)
+                                        @for($i = 0; $i < $hotel->star_number ; $i++)
                                         <li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
                                         @endfor
 
@@ -544,7 +544,7 @@
 								<!-- Data item -->
 								<div class="col">
 									<small class="d-block d-xxl-none">Contact:</small>
-									<h6 class="text-success mb-0">{{ $hotel->tel }}</h6>
+									<h6 class="text-success mb-0">{{ $hotel->hotel_phone }}</h6>
 								</div>
 		
 								<!-- Data item -->
