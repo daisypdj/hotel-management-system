@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\customer;
 
 use Carbon\Carbon;
+use App\Models\Room;
 use App\Models\Hotel;
 use App\Models\Room_type;
 use App\Models\Reservation;
@@ -82,5 +83,14 @@ class ReservationController extends Controller
         $request->session()->put('reservation', $reservation);
 
         return to_route('customer.confirm');
+    }
+
+    public function confirm(Request $request){
+
+        $reservation=$request->session()->get('reservation');
+        $room=Room::find($reservation->room_id);
+        $hotel=Hotel::find($room->hotel_id);
+        //return $hotel;
+        return view('customer.booking-confirm',compact('reservation','hotel','room'));
     }
 }
