@@ -296,7 +296,7 @@
 						<li class="nav-item ms-3 dropdown">
                             <!-- Avatar -->
                             <a class="avatar avatar-xs p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img class="avatar-img rounded-circle" src="{{ asset('assets/images/profile-man.jfif') }}" alt="avatar">
+                                <img class="avatar-img rounded-circle" src="{{ asset('assets/images/avatar/06.jpg') }}" alt="avatar">
                             </a>
         
                             <!-- Profile dropdown START -->
@@ -306,7 +306,7 @@
                                     <div class="d-flex align-items-center">
                                         <!-- Avatar -->
                                         <div class="avatar me-3">
-                                            <img class="avatar-img rounded-circle shadow" src="{{ asset('assets/images/profile-man.jfif') }}" alt="avatar">
+                                            <img class="avatar-img rounded-circle shadow" src="{{ asset('assets/images/avatar/06.jpg') }}" alt="avatar">
                                         </div>
                                         <div>
                                             <a class="h6 mt-2 mt-sm-0" href="#">{{ auth()->user()->name }}</a>
