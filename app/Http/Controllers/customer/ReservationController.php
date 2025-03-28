@@ -61,4 +61,26 @@ class ReservationController extends Controller
         $request->session()->put('checkOut',$request->checkOut);
         return view('Hotel.step-two',compact('rooms'));
     }   
+
+    public function stepFinal(Request $request){
+
+        if($request->session()->has('reservation')){
+            $request->session()->forget('reservation');
+        }
+        $reservation=Reservation::create([
+            'room_id'=>$request->room_id,
+            'check_in'=>$request->check_in,
+            'check_out'=>$request->check_out,
+            'duration_of_stay'=>$request->duree,
+            'total_price'=>$request->price_reser,
+            'user_id'=>auth()->user()->id,
+            'status'=>1,
+        ]);
+        if($request->session()->has('reservation')){
+            $request->session()->forget('reservation');
+        }
+        $request->session()->put('reservation', $reservation);
+
+        return to_route('customer.confirm');
+    }
 }

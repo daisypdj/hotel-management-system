@@ -98,6 +98,10 @@ Finalisation de votre reservation
                             <!-- Title -->
                             <h4 class="card-title mb-0">Résumé des prix</h4>
                         </div>
+                        <div class="card-body">
+                            <h6 class="fw-light small mb-1">Durée de séjour</h6>
+                            <h6 class="mb-0">{{ $duree }} jours</h6>
+                        </div>
                         <!-- Card header END -->
 
                         <!-- Card body START -->
@@ -108,7 +112,7 @@ Finalisation de votre reservation
                                 <div class="col-md-6">
                                     <div class="bg-light py-3 px-4 rounded-3">
                                         <h6 class="fw-light small mb-1">Check-in</h6>
-                                        <h6 class="mb-0">{{ $checkIn }} 2023</h6>
+                                        <h6 class="mb-0">{{ $checkIn }}</h6>
                                     </div>
                                 </div>
 
@@ -116,7 +120,7 @@ Finalisation de votre reservation
                                 <div class="col-md-6">
                                     <div class="bg-light py-3 px-4 rounded-3">
                                         <h6 class="fw-light small mb-1">Check out</h6>
-                                        <h6 class="mb-0">{{ $checkOut }}  2023</h6>
+                                        <h6 class="mb-0">{{ $checkOut }}</h6>
                                     </div>
                                 </div>
                             </div>
