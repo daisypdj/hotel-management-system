@@ -69,7 +69,7 @@ class ReservationController extends Controller
             $request->session()->forget('reservation');
         }
         $reservation=Reservation::create([
-            'room_id'=>$request->room_id,
+            'room_id'=>$request->chambre_id,
             'check_in'=>$request->check_in,
             'check_out'=>$request->check_out,
             'duration_of_stay'=>$request->duree,
