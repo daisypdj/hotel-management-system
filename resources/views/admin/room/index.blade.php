@@ -419,7 +419,7 @@
 								<!-- Overlay item -->
 								<div class="position-relative">
 									<!-- Image -->
-									<img src="{{ asset($room->Room_profile) }}" class="card-img-top" alt="Card image">
+									<img style="height: 200px; width: 100%;" src="{{ asset($room->Room_profile) }}" class="card-img-top" alt="Card image">
 									<!-- Overlay -->
 									<div class="card-img-overlay d-flex flex-column p-3">
 										<!-- Card overlay top -->
