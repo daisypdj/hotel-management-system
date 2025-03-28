@@ -18,7 +18,7 @@ class RoomSeeder extends Seeder
                 'status'=>1,
                 'hotel_id'=>rand(1,19),
                 'room_type_id'=>rand(1,5),
-                'Room_profile'=>"assets/images/chambres/$i.jpg",
+                'Room_profile'=>"assets/images/rooms/$i.jpg",
                 'Room_price'=>rand(25000,100000),
             ],
             );
