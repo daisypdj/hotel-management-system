@@ -38,13 +38,14 @@ class HotelController extends Controller
         $user->name=$request->name;
         $user->email=$request->email;
         $user->password=$request->password;
+        $user->phone=$request->hotel_phone;
         $user->role_id=2;
         $user->save();
 
         $path = 'assets/images/hotel';
-        $myimage = $request->image->getClientOriginalName();
+        $myimage = $request->hotel_profile->getClientOriginalName();
         $pathImage="$path/$myimage";
-        $request->image->move(public_path($path), $myimage);
+        $request->hotel_profile->move(public_path($path), $myimage);
 
         $hotel=new Hotel;
         $hotel->hotel_name=$request->hotel_name;
