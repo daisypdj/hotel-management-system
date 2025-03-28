@@ -23,7 +23,7 @@ class ReservationController extends Controller
                         ->where('reservations.user_id',auth()->user()->id)
                         ->where('reservations.status',1)
                         ->get();
-        return view('customer.my-reservations',compact('reservations'));
+        return $reservations;
     }
 
     public function fast(){

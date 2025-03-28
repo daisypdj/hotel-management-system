@@ -508,7 +508,7 @@ Hotel list START -->
 								<div class="tiny-slider arrow-round arrow-xs arrow-dark overflow-hidden rounded-2">
 									<div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-dots="false" data-items="1">
 										<!-- Image item -->
-										<div><img src="{{ asset($hotel->hotel_profile) }}" alt="Hotel image"></div>
+										<div><img style="width: 100%; height: 170px;" src="{{ asset($hotel->hotel_profile) }}" alt="Hotel image"></div>
 
 										{{-- <!-- Image item -->
 										<div><img src="assets/images/category/hotel/4by3/02.jpg" alt="Card image"></div>

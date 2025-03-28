@@ -93,7 +93,7 @@ Mes Reservations
                                 <div class="row g-0">
                                     <!-- Card img -->
                                     <div class="col-md-3">
-                                        <img src="{{ asset($reservation->image) }}" class="card-img rounded-2" alt="Card image">
+                                        <img src="{{ asset($reservation->Room_profile) }}" class="card-img rounded-2" alt="Card image">
                                     </div>
 
                                     <!-- Card body -->
@@ -114,14 +114,14 @@ Mes Reservations
                                             </div>
 
                                             <!-- Title -->
-                                            <h5 class="card-title mb-1">{{ $reservation->nom_hotel }}- Chambre numero {{ $reservation->chambre_id }}</h5>
-                                            <small><i class="bi bi-geo-alt me-2"></i>{{ $reservation->ville }}</small>
+                                            <h5 class="card-title mb-1">{{ $reservation->room->hotel->nom_hotel }}- Chambre numero {{ $reservation->room->room_number }}</h5>
+                                            <small><i class="bi bi-geo-alt me-2"></i>{{ $reservation->room->hotel->ville }}</small>
 
                                             <!-- Price and Button -->
                                             <div class="d-sm-flex justify-content-sm-between align-items-center mt-3 mt-md-auto">
                                                 <!-- Button -->
                                                 <div class="d-flex align-items-center">
-                                                    <h5 class="fw-bold mb-0 me-1">{{ $reservation->price_reser }} XAF</h5>
+                                                    <h5 class="fw-bold mb-0 me-1">{{ $reservation->total_price }} XAF</h5>
 
                                                 </div>
                                                 <!-- Price -->

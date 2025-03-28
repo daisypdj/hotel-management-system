@@ -126,7 +126,7 @@
 
                                             <li class="list-group-item d-sm-flex justify-content-between align-items-center">
                                                 <span class="mb-0"><i class="bi bi-currency-dollar fa-fw me-2"></i>Total Price:</span>
-                                                <span class="h6 fw-normal mb-0">{{ $reservation->price_reser }}</span>
+                                                <span class="h6 fw-normal mb-0">{{ $reservation->total_price }} XAF</span>
                                             </li>
                                         </ul>
                                     </div>
