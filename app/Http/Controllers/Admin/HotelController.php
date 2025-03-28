@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Carbon\Carbon;
 use App\Models\Room;
+use App\Models\User;
 use App\Models\Hotel;
 use App\Models\Room_type;
 use Illuminate\Http\Request;
@@ -33,7 +34,28 @@ class HotelController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user=new User;
+        $user->name=$request->name;
+        $user->email=$request->email;
+        $user->password=$request->password;
+        $user->role_id=2;
+        $user->save();
+
+        $path = 'assets/images/hotel';
+        $myimage = $request->image->getClientOriginalName();
+        $pathImage="$path/$myimage";
+        $request->image->move(public_path($path), $myimage);
+
+        $hotel=new Hotel;
+        $hotel->hotel_name=$request->hotel_name;
+        $hotel->hotel_town=$request->hotel_town;
+        $hotel->hotel_phone=$request->hotel_phone;
+        $hotel->hotel_profile=$pathImage;
+        $hotel->star_number=$request->star_number;
+        $hotel->user_id=$user->id;
+        $hotel->save();
+
+        return redirect()->route('admin.hotel.index')->with('success','Hotel created successfully');
     }
 
     /**
