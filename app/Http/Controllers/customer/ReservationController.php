@@ -48,9 +48,9 @@ class ReservationController extends Controller
 
         $classe=$request->classe;
         $rooms=DB::table('rooms')
-                ->join('room__types','rooms.room__type_id','room__types.id')
-                ->select('rooms.id','rooms.hotel_id','rooms.image','room__types.title','room__types.price','room__types.adult_capacity','room__types.kids_capacity')
-                ->where('room__types.title',$classe)
+                ->join('room_types','rooms.room_type_id','room_types.id')
+                ->select('rooms.id','rooms.hotel_id','rooms.Room_profile','room_types.title','room_types.price','room_types.adult_capacity','room_types.kids_capacity')
+                ->where('room_types.title',$classe)
                 ->where('rooms.hotel_id',$request->hotel)
                 ->get();
         
