@@ -46,7 +46,7 @@ Ajouter une chambre
                                         <label class="form-label">Hotel</label>
                                         <select name="hotel" class="form-select js-choice">
                                             @foreach ($hotels as $hotel)
-                                            <option value="{{ $hotel->id }}">{{ $hotel->nom_hotel }}</option>
+                                            <option value="{{ $hotel->id }}">{{ $hotel->hotel_name }}</option>
                                             @endforeach
 
 
@@ -54,7 +54,7 @@ Ajouter une chambre
                                     </div>
 
                                     <div class="col-12">
-                                        <label class="form-label">Selectionnez la classe de chambre</label>
+                                        <label class="form-label">Room Type</label>
                                         <select name="type" class="form-select js-choice">
                                             @foreach ($room_types as $type)
                                             <option value="{{ $type->id }}">{{ $type->title }}</option>
@@ -64,7 +64,10 @@ Ajouter une chambre
                                         </select>
                                     </div>
 
-
+                                    <div class="col-12">
+                                        <label class="form-label">Room Price</label>
+                                        <input placeholder="Enter the price of the room" type="number" name="price" class="form-control" required>
+                                    </div>
 
 
                                 </div>
@@ -88,7 +91,7 @@ Ajouter une chambre
 
                                     <!-- Image Gallery -->
                                     <div class="col-12">
-                                        <label class="form-label">Image de la Chambre*</label>
+                                        <label class="form-label">Room Image*</label>
                                         <div class="dropzone dropzone-custom" data-dropzone='{"maxFiles": 5, "addRemoveLinks": false}'>
                                             <div class="dz-message needsclick">
 
@@ -96,7 +99,7 @@ Ajouter une chambre
                                             </div>
                                             <input type="file" name="image" required>
                                         </div>
-                                        <p class="small mb-0 mt-2"><b>Note:</b>Uniquement JPG, JPEG et PNG. Les dimensions suggérées sont 600px * 450px. L'image la plus grande sera recadrée au format 4:3 pour s'adapter à nos vignettes/présentations..</p>
+                                        <p class="small mb-0 mt-2"><b>Note:</b>Only JPG, JPEG and PNG. The suggested dimensions are 600px * 450px. The largest image will be cropped to the 4:3 format to fit our thumbnails/presentations..</p>
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +112,7 @@ Ajouter une chambre
 
                         <!-- Button -->
                         <div class="text-end">
-                            <button type="submit" class="btn btn-primary mb-0">Ajouter</button>
+                            <button type="submit" class="btn btn-primary mb-0">Add Room</button>
                         </div>
                     </form>
                 </div>

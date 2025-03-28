@@ -37,18 +37,19 @@ class RoomController extends Controller
      */
     public function store(Request $request)
     {
-        $path = 'assets/images/chambres';
+        $path = 'assets/images/rooms';
             $myimage = $request->image->getClientOriginalName();
             $pathImage="$path/$myimage";
             $request->image->move(public_path($path), $myimage);
         $chambre=new Room;
-        $chambre->room__type_id=$request->type;
+        $chambre->room_type_id=$request->type;
         $chambre->hotel_id=$request->hotel;
-        $chambre->image=$pathImage;
+        $chambre->Room_profile=$pathImage;
+        $chambre->Room_price=$request->price;
         $chambre->status=0;
         $chambre->save();
 
-        return to_route('admin.rooms.index')->with('success','Hotel enregistré avec success');
+        return to_route('admin.rooms.index')->with('success','Room registered successfully');
     }
 
     /**
