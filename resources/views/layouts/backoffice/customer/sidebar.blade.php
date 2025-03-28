@@ -1,6 +1,6 @@
 <ul class="nav nav-pills-primary-soft flex-column">
     <li class="nav-item">
-        <a class="nav-link active" href="account-profile.html.htm"><i class="bi bi-person fa-fw me-2"></i>Mon Profil</a>
+        <a class="nav-link active" href="{{ route('customer.dashboard') }}"><i class="bi bi-person fa-fw me-2"></i>Mon Profil</a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="{{ route('customer.my-reservations.index') }}"><i class="bi bi-ticket-perforated fa-fw me-2"></i>Mes Reservations</a>

@@ -44,7 +44,7 @@ Mes Reservations
                                     <div class="text-center mb-3">
                                         <!-- Avatar -->
                                         <div class="avatar avatar-xl mb-2">
-                                            <img class="avatar-img rounded-circle border border-2 border-white" src="{{ asset('assets/images/profile-man.jfif') }}" alt="">
+                                            <img class="avatar-img rounded-circle border border-2 border-white" src="{{ asset('assets/images/avatar/06.jpg') }}" alt="">
                                         </div>
                                         <h6 class="mb-0">{{ auth()->user()->name }}</h6>
                                         <a href="#" class="text-reset text-primary-hover small">{{ auth()->user()->email }}</a>

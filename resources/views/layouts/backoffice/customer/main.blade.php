@@ -114,7 +114,7 @@ Footer START -->
 
 			<!-- Widget -->
 			<div class="col-md-4">
-				<div class="text-muted text-primary-hover"> Copyrights ©2023 Booking. Build by <a href="https://www.webestica.com/" class="text-muted">Webestica</a>. </div>
+				<div class="text-muted text-primary-hover">Made By Denise Pegha ©2025 </div>
 			</div>
 
 			<!-- Widget -->
