@@ -57,7 +57,7 @@ class HotelController extends Controller
         $hotel->user_id=$user->id;
         $hotel->save();
 
-        return redirect()->route('admin.hotel.index')->with('success','Hotel created successfully');
+        return redirect()->route('admin.hotels.index')->with('success','Hotel created successfully');
     }
 
     /**
