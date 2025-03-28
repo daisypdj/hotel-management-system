@@ -114,8 +114,8 @@ Mes Reservations
                                             </div>
 
                                             <!-- Title -->
-                                            <h5 class="card-title mb-1">{{ $reservation->room->hotel->nom_hotel }}- Chambre numero {{ $reservation->room->room_number }}</h5>
-                                            <small><i class="bi bi-geo-alt me-2"></i>{{ $reservation->room->hotel->ville }}</small>
+                                            <h5 class="card-title mb-1">{{ $reservation->hotel_name }}- Chambre numero {{ $reservation->room_id }}</h5>
+                                            <small><i class="bi bi-geo-alt me-2"></i>{{ $reservation->hotel_town }}</small>
 
                                             <!-- Price and Button -->
                                             <div class="d-sm-flex justify-content-sm-between align-items-center mt-3 mt-md-auto">
