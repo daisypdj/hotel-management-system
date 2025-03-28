@@ -429,7 +429,7 @@
 								<!-- Overlay item -->
 								<div class="position-relative">
 									<!-- Image -->
-									<img src="{{ asset($hotel->hotel_profile) }}" class="card-img-top" alt="Card image">
+									<img style="height: 200px; width: 100%;" src="{{ asset($hotel->hotel_profile) }}" class="card-img-top" alt="Card image">
 									<!-- Overlay -->
 									<div class="card-img-overlay d-flex flex-column p-3">
 										<!-- Card overlay top -->
@@ -457,7 +457,7 @@
 									<h5 class="card-title mb-1"><a href="admin-booking-detail.html.htm">{{ $hotel->hotel_name }}</a></h5>
 									<ul class="list-group list-group-borderless small mt-2 mb-0">
 										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-location fa-fw me-2"></i>{{ $hotel->town }}
+											<i class="fa-solid fa-location fa-fw me-2"></i>{{ $hotel->hotel_town }}
 										</li>
 										
 									</ul>
