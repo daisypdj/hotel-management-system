@@ -627,7 +627,7 @@ Featured Hotels START -->
 		<!-- Title -->
 		<div class="row mb-4">
 			<div class="col-12 text-center">
-				<h2 class="mb-0">Hôtels en vedette</h2>
+				<h2 class="mb-0">Featured hotels</h2>
 			</div>
 		</div>
 
