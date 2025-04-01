@@ -94,11 +94,11 @@ Liste des reservations
                         <div class="d-flex align-items-center">
                             <!-- Avatar -->
                             <div class="avatar avatar-xs flex-shrink-0">
-                                <img class="avatar-img rounded-circle" src="{{ asset($reservation->image) }}" alt="avatar">
+                                <img class="avatar-img rounded-circle" src="{{ asset($reservation->Room_profile) }}" alt="avatar">
                             </div>
                             <!-- Info -->
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-light">{{ $reservation->nom_hotel }}</h6>
+                                <h6 class="mb-0 fw-light">{{ $reservation->hotel_name }}</h6>
                             </div>
                         </div>
                     </div>
@@ -106,13 +106,13 @@ Liste des reservations
                     <!-- Data item -->
                     <div class="col">
                         <small class="d-block d-lg-none">Prix:</small>
-                        <h6 class="text-success mb-0">{{ $reservation->price_reser }} XAF</h6>
+                        <h6 class="text-success mb-0">{{ $reservation->total_price }} XAF</h6>
                     </div>
 
                     <!-- Data item -->
                     <div class="col">
                         <small class="d-block d-lg-none">Numero Chambre:</small>
-                        <div class="badge bg-success bg-opacity-10 text-success">{{ $reservation->chambre_id }}</div>
+                        <div class="badge bg-success bg-opacity-10 text-success">{{ $reservation->room_id }}</div>
                     </div>
 
                     <!-- Data item -->
