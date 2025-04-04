@@ -33,12 +33,7 @@ Main Banner START -->
 
 
 					<!-- Buttons -->
-					<div class="hstack gap-4 flex-wrap align-items-center">
-						<!-- Button -->
-						<a href="#" class="btn btn-primary-soft mb-0">Discover now</a>
-						<!-- Story button -->
-
-					</div>
+					
 				</div>
 
                     <!-- Image -->
