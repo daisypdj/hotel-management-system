@@ -30,7 +30,7 @@
 					</div>
 
 					<!-- Link block -->
-					<div class="col-6 col-md-3">
+					<div class="col-6 col-md-8">
 						<h5 class="text-white mb-2 mb-md-4">Link</h5>
 						<ul class="nav flex-column text-primary-hover">
 							<li class="nav-item"><a class="nav-link text-muted" href="#">Sign up</a></li>
@@ -43,16 +43,7 @@
 					</div>
 
 					<!-- Link block -->
-					<div class="col-6 col-md-3">
-						<h5 class="text-white mb-2 mb-md-4">Global Site</h5>
-						<ul class="nav flex-column text-primary-hover">
-							<li class="nav-item"><a class="nav-link text-muted" href="#">India</a></li>
-							<li class="nav-item"><a class="nav-link text-muted" href="#">California</a></li>
-							<li class="nav-item"><a class="nav-link text-muted" href="#">Indonesia</a></li>
-							<li class="nav-item"><a class="nav-link text-muted" href="#">Canada</a></li>
-							<li class="nav-item"><a class="nav-link text-muted" href="#">Malaysia</a></li>
-						</ul>
-					</div>
+					
 
 					<!-- Link block -->
 					
