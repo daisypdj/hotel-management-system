@@ -381,33 +381,6 @@ Hotel grid START -->
 			@endforeach
 			<!-- Card item END -->
 
-			<!-- Card item START -->
-			<div class="col-md-6 col-xl-4">
-				<div class="card shadow p-2 pb-0 h-100">
-					<!-- Image -->
-					<img src="assets/images/category/hotel/4by3/10.jpg" class="rounded-2" alt="Card image">
-
-					<!-- Card body START -->
-					<div class="card-body px-3 pb-0">
-						<!-- Rating and cart -->
-						<div class="d-flex justify-content-between mb-3">
-							<a href="#" class="badge bg-dark text-white"><i class="bi fa-fw bi-star-fill me-2 text-warning"></i>4.0</a>
-							<a href="#" class="h6 mb-0 z-index-2"><i class="bi fa-fw bi-bookmark"></i></a>
-						</div>
-
-						<!-- Title -->
-						<h5 class="card-title"><a href="hotel-detail.html.htm">Courtyard by Marriott New York </a></h5>
-
-						<!-- List -->
-						<ul class="nav nav-divider mb-2 mb-sm-3">
-							<li class="nav-item">Air Conditioning</li>
-							<li class="nav-item">Wifi</li>
-							<li class="nav-item">Pool</li>
-							<li class="nav-item">More+</li>
-						</ul>
-					</div>
-<!-- =======================
-Hotel list END -->
 
 </main>
 @endsection
