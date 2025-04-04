@@ -173,12 +173,11 @@ Dashboard-Hotel
                                                 <td> <h6 class="mb-0">{{ $reservation->name }}</h6> </td>
                                                 <td> <h6 class="mb-0"><a href="#">{{ $reservation->check_in }}</a></h6> </td>
                                                 <td> {{ $reservation->check_out }}</td>
-                                                <td>  <img style="width: 50px;height: 50px;" class="avatar-img rounded-circle" src="{{ asset($reservation->Room_profile) }}" alt="avatar"> </td>
-                                                <td> {{ $reservation->hotel_name }} </td>
+                                                <td class="d-flex flex-column align-items-center">  <img style="width: 50px;height: 50px;" class="avatar-img rounded-circle" src="{{ asset($reservation->Room_profile) }}" alt="avatar">{{ $reservation->hotel_name }}  </td>
+                                               
                                                 <td>{{ $reservation->total_price }} XAF </td>
                                                 <td>{{ $reservation->room_id }}</td>
-                                                <td> <div class="badge text-bg-success"></div> </td>
-                                                <td> <div class="badge bg-success bg-opacity-10 text-success">Full payment</div> </td>
+                                              
                                                 <td> <a href="#" class="btn btn-sm btn-light mb-0">View</a> </td>
                                             </tr>
                                         @empty
