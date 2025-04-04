@@ -4,8 +4,8 @@
 		<div class="container">
 			<!-- Logo START -->
 			<a class="navbar-brand" href="index.html-1.htm">
-				<img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">
-				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo">
+				<img class="light-mode-item navbar-brand-item" src="{{ asset('assets/images/logo.svg') }}" alt="logo">
+				<img class="dark-mode-item navbar-brand-item" src="{{ asset('assets/images/logo-light.svg') }}" alt="logo">
 			</a>
 			<!-- Logo END -->
 
@@ -47,7 +47,7 @@
                 <li class="nav-item ms-3 dropdown">
 					<!-- Avatar -->
 					<a class="avatar avatar-xs p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-						<img class="avatar-img rounded-circle" src="{{ asset('assets/images/profile-man.jfif') }}" alt="avatar">
+						<img class="avatar-img rounded-circle" src="{{ asset($hotel->hotel_profile) }}" alt="avatar">
 					</a>
 
 					<!-- Profile dropdown START -->
@@ -57,10 +57,10 @@
 							<div class="d-flex align-items-center">
 								<!-- Avatar -->
 								<div class="avatar me-3">
-									<img class="avatar-img rounded-circle shadow" src="{{ asset('assets/images/profile-man.jfif') }}" alt="avatar">
+									<img class="avatar-img rounded-circle shadow" src="{{ asset($hotel->hotel_profile) }}" alt="avatar">
 								</div>
 								<div>
-									<a class="h6 mt-2 mt-sm-0" href="#">{{ auth()->user()->name }}</a>
+									<a class="h6 mt-2 mt-sm-0" href="#">{{ $hotel->hotel_name }}</a>
 									<p class="small m-0">{{ auth()->user()->email }}</p>
 								</div>
 							</div>

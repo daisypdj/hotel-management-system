@@ -16,7 +16,7 @@ Dashboard-Hotel
                     <div class="avatar avatar-xl mb-2 mb-sm-0">
                         <img class="avatar-img rounded-circle" src="{{ asset($hotel->hotel_profile) }}" alt="">
                     </div>
-                    <h4 class="mb-2 mb-sm-0 ms-sm-3"><span class="fw-light">Hotel </span>{{ $hotel->nom_hotel }}</h4>
+                    <h4 class="mb-2 mb-sm-0 ms-sm-3"><span class="fw-light">Hotel </span>{{ $hotel->hotel_name }}</h4>
 
                 </div>
                 <!-- Avatar and info START -->
@@ -171,12 +171,12 @@ Dashboard-Hotel
                                         @forelse ($reservations as $reservation)
                                             <tr>
                                                 <td> <h6 class="mb-0">{{ $reservation->name }}</h6> </td>
-                                                <td> <h6 class="mb-0"><a href="#">{{ $reservation->check_in }}Deluxe Pool View</a></h6> </td>
+                                                <td> <h6 class="mb-0"><a href="#">{{ $reservation->check_in }}</a></h6> </td>
                                                 <td> {{ $reservation->check_out }}</td>
-                                                <td>  <img class="avatar-img rounded-circle" src="{{ asset($reservation->image) }}" alt="avatar"> </td>
-                                                <td> {{ $reservation->nom_hotel }} </td>
-                                                <td>{{ $reservation->price_reser }} XAF </td>
-                                                <td>{{ $reservation->chambre_id }}</td>
+                                                <td>  <img style="width: 50px;height: 50px;" class="avatar-img rounded-circle" src="{{ asset($reservation->Room_profile) }}" alt="avatar"> </td>
+                                                <td> {{ $reservation->hotel_name }} </td>
+                                                <td>{{ $reservation->total_price }} XAF </td>
+                                                <td>{{ $reservation->room_id }}</td>
                                                 <td> <div class="badge text-bg-success"></div> </td>
                                                 <td> <div class="badge bg-success bg-opacity-10 text-success">Full payment</div> </td>
                                                 <td> <a href="#" class="btn btn-sm btn-light mb-0">View</a> </td>
