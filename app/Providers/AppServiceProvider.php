@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Hotel;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,6 +20,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        view()->composer('layouts.backoffice.hotel.header-hotel', function ($view) {
+            $hotel=Hotel::where('user_id',auth()->user()->id)->first();
+            $view->with('hotel', $hotel);
+        });
     }
 }

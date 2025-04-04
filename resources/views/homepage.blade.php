@@ -33,12 +33,7 @@ Main Banner START -->
 
 
 					<!-- Buttons -->
-					<div class="hstack gap-4 flex-wrap align-items-center">
-						<!-- Button -->
-						<a href="#" class="btn btn-primary-soft mb-0">Discover now</a>
-						<!-- Story button -->
-
-					</div>
+					
 				</div>
 
                     <!-- Image -->
@@ -651,7 +646,7 @@ Featured Hotels START -->
                         <!-- Card body -->
                         <div class="card-body px-2">
                             <!-- Title -->
-                            <h5 class="card-title"><a href="hotel-detail.html.htm" class="stretched-link">{{ $hotel->hotel_name }}</a></h5>
+                            <h5 class="card-title">{{ $hotel->hotel_name }}</h5>
                             <!-- Price and rating -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <h6 class="text-success mb-0">$455 <small class="fw-light">/starting at</small> </h6>
