@@ -77,12 +77,7 @@ liste des Chambres
                                 <h5 class="card-title"><a href="hotel-detail.html.htm">Chambre numero {{ $room->id }}</a></h5>
 
                                 <!-- List -->
-                                <ul class="nav nav-divider mb-2 mb-sm-3">
-                                    <li class="nav-item">Air Conditioning</li>
-                                    <li class="nav-item">Wifi</li>
-                                    <li class="nav-item">Kitchen</li>
-                                    <li class="nav-item">Pool</li>
-                                </ul>
+                                
                             </div>
                             <!-- Card body END -->
 
@@ -99,7 +94,7 @@ liste des Chambres
                                     <!-- Button -->
 
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="{{ route('step-three',$room->id) }}" class="btn btn-sm btn-primary-soft mb-0 w-100">Reserver maintenant<i class="bi bi-arrow-right ms-2"></i></a>
+                                        <a href="{{ route('step-three',$room->id) }}" class="btn btn-sm btn-primary-soft mb-0 w-100">Book now<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
