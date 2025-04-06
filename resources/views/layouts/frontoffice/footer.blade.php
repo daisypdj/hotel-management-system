@@ -11,7 +11,7 @@
 				</a>
 				<p class="my-3 text-muted">Departure defective arranging rapturous did believe him all had supported.</p>
 				<p class="mb-2"><a href="#" class="text-muted text-primary-hover"><i class="bi bi-telephone me-2"></i>+ 237 673 71 07 31</a> </p>
-				<p class="mb-0"><a href="#" class="text-muted text-primary-hover"><i class="bi bi-envelope me-2"></i>example@gmail.com</a></p>
+				<p class="mb-0"><a href="#" class="text-muted text-primary-hover"><i class="bi bi-envelope me-2"></i>admin@hotelo.com</a></p>
 			</div>
 			<!-- Widget 1 END -->
 
@@ -33,12 +33,10 @@
 					<div class="col-6 col-md-8">
 						<h5 class="text-white mb-2 mb-md-4">Link</h5>
 						<ul class="nav flex-column text-primary-hover">
-							<li class="nav-item"><a class="nav-link text-muted" href="#">Sign up</a></li>
-							<li class="nav-item"><a class="nav-link text-muted" href="#">Sign in</a></li>
-							<li class="nav-item"><a class="nav-link text-muted" href="#">Privacy Policy</a></li>
-							<li class="nav-item"><a class="nav-link text-muted" href="#">Terms</a></li>
-							<li class="nav-item"><a class="nav-link text-muted" href="#">Cookie</a></li>
-							<li class="nav-item"><a class="nav-link text-muted" href="#">Support</a></li>
+							<li class="nav-item"><a class="nav-link text-muted" href="{{ route('register') }}">Sign up</a></li>
+							<li class="nav-item"><a class="nav-link text-muted" href="{{ route('login') }}">Sign in</a></li>
+						
+						
 						</ul>
 					</div>
 
