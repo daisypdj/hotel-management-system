@@ -19,9 +19,9 @@ liste des Chambres
                         <h1 class="text-center text-white">
 
                         @if($rooms->count() > 0)
-                            {{ $rooms->count() }} Chambres disponibles
+                            {{ $rooms->count() }} rooms available
                         @else
-                            Aucune chambre disponible
+                            No rooms available
                         @endif
                         </h1>
                     </div>
@@ -74,7 +74,7 @@ liste des Chambres
                                 </div>
 
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="hotel-detail.html.htm">Chambre numero {{ $room->id }}</a></h5>
+                                <h5 class="card-title"><a href="hotel-detail.html.htm">Room number {{ $room->id }}</a></h5>
 
                                 <!-- List -->
                                 
@@ -102,7 +102,7 @@ liste des Chambres
                     </div>
                     <!-- Card item END -->
                 @empty
-                    Aucune chambre disponible
+                    nothing rooms available
                 @endforelse
 
 
