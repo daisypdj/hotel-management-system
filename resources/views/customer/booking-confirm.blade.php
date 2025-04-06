@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Reservation Confirmé</title>
+	<title>Reservation Confirmed</title>
 
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
@@ -105,22 +105,22 @@
                             <!-- Card body -->
                             <div class="card-body text-center p-4">
                                 <!-- Title -->
-                                <h1 class="card-title fs-3">🎊 Félicitations 🎊</h1>
-                                <p class="lead mb-3">Votre Réservation à bien été pris en compte...</p>
+                                <h1 class="card-title fs-3">🎊 Congratulations 🎊</h1>
+                                <p class="lead mb-3">Your reservation has been taken into account...</p>
 
                                 <!-- Second title -->
-                                <h5 class="text-primary mb-4">Hotel: {{ $hotel->nom_hotel }}</h5>
+                                <h5 class="text-primary mb-4">Hotel: {{ $hotel->hotel_name }}</h5>
 
                                 <!-- List -->
                                 <div class="row justify-content-between text-start mb-4">
                                     <div class="col-lg-5">
                                         <ul class="list-group list-group-borderless">
                                             <li class="list-group-item d-sm-flex justify-content-between align-items-center">
-                                                <span class="mb-0"><i class="bi bi-vr fa-fw me-2"></i>Id Reservation :</span>
-                                                <span class="h6 fw-normal mb-0">numero {{ $reservation->id }}</span>
+                                                <span class="mb-0"><i class="bi bi-vr fa-fw me-2"></i>Reservation Id :</span>
+                                                <span class="h6 fw-normal mb-0">number {{ $reservation->id }}</span>
                                             </li>
                                             <li class="list-group-item d-sm-flex justify-content-between align-items-center">
-                                                <span class="mb-0"><i class="bi bi-person fa-fw me-2"></i>Reserver  Par:</span>
+                                                <span class="mb-0"><i class="bi bi-person fa-fw me-2"></i>Booked by:</span>
                                                 <span class="h6 fw-normal mb-0">{{ auth()->user()->name }}</span>
                                             </li>
 

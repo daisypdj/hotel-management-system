@@ -73,7 +73,7 @@ class ReservationController extends Controller
             'check_in'=>$request->check_in,
             'check_out'=>$request->check_out,
             'duration_of_stay'=>$request->duree,
-            'total_price'=>$request->price_reser,
+            'total_price'=>$request->price_reservation,
             'user_id'=>auth()->user()->id,
             'status'=>1,
         ]);
