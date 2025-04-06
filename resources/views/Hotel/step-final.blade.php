@@ -1,6 +1,6 @@
 @extends('layouts.frontoffice.main')
 @section('title')
-Finalisation de votre reservation
+Finalisation of your reservation
 @endsection
 
 @section('content')
@@ -96,11 +96,11 @@ Finalisation de votre reservation
                         <!-- Card header START -->
                         <div class="card-header bg-transparent border-bottom">
                             <!-- Title -->
-                            <h4 class="card-title mb-0">Résumé des prix</h4>
+                            <h4 class="card-title mb-0">Summary of prices</h4>
                         </div>
                         <div class="card-body">
-                            <h6 class="fw-light small mb-1">Durée de séjour</h6>
-                            <h6 class="mb-0">{{ $duree }} jours</h6>
+                            <h6 class="fw-light small mb-1">Duration of stay</h6>
+                            <h6 class="mb-0">{{ $duree }} days</h6>
                         </div>
                         <!-- Card header END -->
 
@@ -146,10 +146,10 @@ Finalisation de votre reservation
                                 <input type="hidden" name="check_in" value="{{ $checkIn }}">
                                 <input type="hidden" name="check_out" value="{{ $checkOut }}">
                                 <input type="hidden" name="duree" value="{{ $duree}}">
-                                <input type="hidden" name="price_reser" value="{{ $room_type->price * $duree }}">
+                                <input type="hidden" name="price_reservation" value="{{ $room_type->price * $duree }}">
                             <div class="d-grid gap-2">
                                 <button type="submit" class="btn btn-dark mb-0">
-                                    Reserver
+                                    Book now
                                 </button >
                             </div>
                         </form>
@@ -161,14 +161,14 @@ Finalisation de votre reservation
                 <div class="col-xl-5 d-none d-xl-block">
                     <div class="card card-body bg-light p-4">
                         <!-- Title -->
-                        <h4 class="card-title">Besoin d'aide?</h4>
+                        <h4 class="card-title">Need help?</h4>
 
                         <!-- List -->
                         <ul class="list-group list-group-borderless">
                             <li class="list-group-item py-3">
                                 <a href="#" class="h6 mb-0">
                                     <i class="bi fa-fw bi-telephone-forward text-primary fs-5 me-2"></i>
-                                    <span class="fw-light me-1">Appellez-nous au:</span>+237 658 511 565
+                                    <span class="fw-light me-1">Call us at:</span>+237 6 90 80 98 40
                                 </a>
                             </li>
 
@@ -177,23 +177,19 @@ Finalisation de votre reservation
                             <li class="list-group-item py-3">
                                 <h6 class="mb-0">
                                     <i class="bi fa-fw bi-alarm text-primary fs-5 me-2"></i>
-                                    <span class="h6 fw-light me-1 mb-0">Ouvert:</span>08H à 20H
+                                    <span class="h6 fw-light me-1 mb-0">Open:</span>08H to 20H
                                 </h6>
                             </li>
 
                             <li class="list-group-item py-0"><hr class="my-0"></li><!-- Divider -->
 
-                            <li class="list-group-item py-3">
-                                <a href="#" class="h6 mb-0">
-                                    <i class="bi fa-fw bi-headset text-primary fs-5 me-2"></i>Appellez-nous
-                                </a>
-                            </li>
+                            
 
                             <li class="list-group-item py-0"><hr class="my-0"></li><!-- Divider -->
 
                             <li class="list-group-item pt-3 pb-0">
                                 <a href="contact.html.htm" class="h6 mb-0">
-                                    <i class="bi fa-fw bi-calendar-check text-primary fs-5 me-2"></i>reservez un Rendez-vous
+                                    <i class="bi fa-fw bi-calendar-check text-primary fs-5 me-2"></i>Book an appointment
                                 </a>
                             </li>
                         </ul>
