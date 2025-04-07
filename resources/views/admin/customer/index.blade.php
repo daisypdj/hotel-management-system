@@ -73,7 +73,13 @@ Liste des clients
                   
 
                     <!-- Data item -->
-                    <div class="col"><a href="#" class="btn btn-sm btn-danger mb-0"><i class="bi bi-trash"></i>Delete</a></div>
+                    <div class="col">
+                        <form method="POST" action="{{ route('admin.customers.destroy',$customer->id) }}" onsubmit="return confirm('Etes vous sur?')">
+                            @csrf
+                            @method('delete')
+                            <button type="submit" class="btn btn-sm btn-danger mb-0"><i class="bi bi-trash"></i>Delete</button>
+                        </form>
+                    </div>
                 </div>
                 @endforeach
                 <!-- Table data -->
