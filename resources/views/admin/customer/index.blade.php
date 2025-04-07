@@ -24,28 +24,7 @@ Liste des clients
             <!-- Card body START -->
             <div class="card-body">
                 <!-- Search and select START -->
-                <div class="row g-3 align-items-center justify-content-between mb-3">
-                    <!-- Search -->
-                    <div class="col-md-8">
-                        <form class="rounded position-relative">
-                            <input class="form-control pe-5" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn border-0 px-3 py-0 position-absolute top-50 end-0 translate-middle-y" type="submit"><i class="fas fa-search fs-6"></i></button>
-                        </form>
-                    </div>
-
-                    <!-- Select option -->
-                    <div class="col-md-3">
-                        <!-- Short by filter -->
-                        <form>
-                            <select class="form-select js-choice" aria-label=".form-select-sm">
-                                <option value="">Sort by</option>
-                                <option>Free</option>
-                                <option>Newest</option>
-                                <option>Oldest</option>
-                            </select>
-                        </form>
-                    </div>
-                </div>
+               
                 <!-- Search and select END -->
 
                 <!-- Table head -->
@@ -94,7 +73,7 @@ Liste des clients
                   
 
                     <!-- Data item -->
-                    <div class="col"><a href="#" class="btn btn-sm btn-light mb-0">View</a></div>
+                    <div class="col"><a href="#" class="btn btn-sm btn-danger mb-0"><i class="bi bi-trash"></i>Delete</a></div>
                 </div>
                 @endforeach
                 <!-- Table data -->
