@@ -212,28 +212,7 @@
 					<!-- Toggler for sidebar END -->
 					
 					<!-- Top bar left -->
-					<div class="navbar-expand-lg ms-auto ms-xl-0">
-						<!-- Toggler for menubar START -->
-						<button class="navbar-toggler ms-auto p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTopContent" aria-controls="navbarTopContent" aria-expanded="false" aria-label="Toggle navigation">
-							<i class="bi bi-search"></i>
-						</button>
-						<!-- Toggler for menubar END -->
-	
-						<!-- Topbar menu START -->
-						<div class="collapse navbar-collapse w-100 z-index-1" id="navbarTopContent">
-							<!-- Top search START -->
-							<div class="nav my-3 my-xl-0 flex-nowrap align-items-center">
-								<div class="nav-item w-100">
-									<form class="position-relative">
-										<input class="form-control bg-light pe-5" type="search" placeholder="Search" aria-label="Search">
-										<button class="bg-transparent px-2 py-0 border-0 position-absolute top-50 end-0 translate-middle-y" type="submit"><i class="fas fa-search fs-6 text-primary"></i></button>
-									</form>
-								</div>
-							</div>
-							<!-- Top search END -->
-						</div>
-						<!-- Topbar menu END -->
-					</div>
+					
 					<!-- Top bar left END -->
                     
 
@@ -383,36 +362,7 @@
 			<!-- Counter END -->
 
 			<!-- Tabs and search START -->
-			<div class="row g-4 justify-content-between align-items-center">
-				
-
-				<div class="col-lg-6 col-xxl-5">
-					<div class="d-sm-flex gap-4 justify-content-between justify-content-lg-end">
-						<!-- Search -->
-						<div class="col-md-8">
-							<form class="rounded position-relative">
-								<input class="form-control bg-transparent" type="search" placeholder="Search" aria-label="Search">
-								<button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
-									<i class="fas fa-search fs-6"></i>
-								</button>
-							</form>
-						</div>
-						<!-- Tabs -->
-						<div class="d-flex justify-content-end mt-2 mt-sm-0">
-							<ul class="nav nav-pills nav-pills-dark" id="room-pills-tab" role="tablist">
-								<!-- Tab item -->
-								<li class="nav-item">
-									 <button class="nav-link rounded-start rounded-0 active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid-tab-pane" type="button" role="tab" aria-controls="grid-tab-pane" aria-selected="true"><i class="bi fa-fw bi-grid-fill"></i></button>
-								</li>
-								<!-- Tab item -->
-								<li class="nav-item">
-									<button class="nav-link rounded-end rounded-0" id="list-tab" data-bs-toggle="tab" data-bs-target="#list-tab-pane" type="button" role="tab" aria-controls="list-tab-pane" aria-selected="false"><i class="bi fa-fw bi-list-ul"></i></button>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+		
 			<!-- Tabs and search END -->
 
 			<!-- Tab content START -->
