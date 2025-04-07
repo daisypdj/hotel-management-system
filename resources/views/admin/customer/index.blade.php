@@ -8,7 +8,17 @@ Liste des clients
 @section('content')
 
 <main>
+@session('success')
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endsession
 
+@session('danger')
+    <div class="alert alert-danger">
+        {{ session('danger') }}
+    </div>
+@endsession
     <!-- Widget START -->
     <div class="row g-4">
 
