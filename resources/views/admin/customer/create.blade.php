@@ -59,7 +59,7 @@ New Customer
                                     
                                     <div class="col-md-6">
                                         <label class="form-label">Telephone</label>
-                                        <input class="form-control" name="phone" required type="number" placeholder="" max="5" min="1" >
+                                        <input class="form-control" name="phone" required type="number" placeholder="Enter your phone number" >
                                     </div>
                                     <!-- Contact number -->
                                     <div class="col-md-6">
