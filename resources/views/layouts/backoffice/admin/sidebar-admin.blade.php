@@ -21,28 +21,28 @@
                 <!-- Menu item -->
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" href="#collapsebooking" role="button" aria-expanded="false" aria-controls="collapsebooking">
-                    Hotel
+                    Hotels
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapsebooking" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.hotels.index') }}">Listes des Hotels</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.hotels.create') }}">Creer un Hotel</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.hotels.index') }}">List of Hotels</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.hotels.create') }}">Create a Hotel</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" href="#collapseagent" role="button" aria-expanded="false" aria-controls="collapseagent">
-                    Chambres
+                    Rooms
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseagent" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rooms.index') }}">Listes des Chambres</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rooms.create') }}">Ajouter une Chambre</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rooms.index') }}">List of Rooms</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rooms.create') }}">Add a Room</a></li>
                     </ul>
                 </li>
                 <!-- Menu item -->
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" href="#collapseguest" role="button" aria-expanded="false" aria-controls="collapseguest">
-                    Utilisateurs
+                    Users
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseguest" data-bs-parent="#navbar-sidebar">
@@ -54,7 +54,7 @@
                 <!-- Menu item -->
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" href="#collapseres" role="button" aria-expanded="false" aria-controls="collapseagent">
-                    Reservation
+                    Reservations
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseres" data-bs-parent="#navbar-sidebar">

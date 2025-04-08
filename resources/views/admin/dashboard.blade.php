@@ -44,7 +44,7 @@ Dashboard
                     <!-- Digit -->
                     <div>
                         <h4 class="mb-0">{{ $roomCount }}</h4>
-                        <span class="h6 fw-light mb-0">Chambres</span>
+                        <span class="h6 fw-light mb-0">Rooms</span>
                     </div>
                     <!-- Icon -->
                     <div class="icon-lg rounded-circle bg-primary text-white mb-0"><i class="fa-solid fa-bed fa-fw"></i></div>
