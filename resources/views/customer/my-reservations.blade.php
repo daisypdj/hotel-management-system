@@ -1,6 +1,6 @@
 @extends('layouts.backoffice.customer.main')
 @section('title')
-Mes Reservations
+My Reservations
 @endsection
 
 @section('content')
@@ -79,7 +79,7 @@ Mes Reservations
                     <div class="card border bg-transparent">
                         <!-- Card header -->
                         <div class="card-header bg-transparent border-bottom">
-                            <h4 class="card-header-title">Mes reservations</h4>
+                            <h4 class="card-header-title">My Reservations</h4>
                         </div>
 
                         <!-- Card body START -->
@@ -128,7 +128,7 @@ Mes Reservations
                                                 <div class="mt-3 mt-sm-0">
                                                     <form action="{{ route('customer.cancel',$reservation->id) }}" method="post">
                                                     @csrf
-                                                    <button type="submit" class="btn btn-sm btn-danger w-100 mb-0">Annuler cette reservation</button>
+                                                    <button type="submit" class="btn btn-sm btn-danger w-100 mb-0">Cancel this reservation</button>
                                                     </form>
                                                 </div>
                                             </div>

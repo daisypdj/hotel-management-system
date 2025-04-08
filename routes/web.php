@@ -48,7 +48,7 @@ Route::middleware(['auth','customer'])->name('customer.')->prefix('customer')->g
     Route::resource('my-reservations',CustomerReservationController::class);
     Route::post('step-final',[CustomerReservationController::class,'stepFinal'])->name('step-final');
     Route::get('confirm/reservation',[CustomerReservationController::class,"confirm"])->name('confirm');
-    Route::get('cancel/reservation/{id}',[CustomerReservationController::class,'cancel'])->name('cancel');
+    Route::post('cancel/reservation/{id}',[CustomerReservationController::class,'cancel'])->name('cancel');
     Route::get('reserver-rapidement',[CustomerReservationController::class,'fast'])->name('fast');
     Route::post('reserver-rapidement',[CustomerReservationController::class,'fastStore'])->name('fast.post');
 });
