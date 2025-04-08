@@ -116,29 +116,29 @@ Main Content START -->
 									<img class="h-50px mb-4" src="assets/images/logo-icon.svg" alt="logo">
 								</a>
 								<!-- Title -->
-								<h1 class="mb-2 h3">Nouveau Compte</h1>
-								<p class="mb-0">Vous êtes déjà membre ?<a href="{{ route('login') }}"> Log in</a></p>
+								<h1 class="mb-2 h3">New Account</h1>
+								<p class="mb-0">Are you already a member ?<a href="{{ route('login') }}"> Log in</a></p>
 
 								<!-- Form START -->
                                     <form method="POST" class="mt-4 text-start" action="{{ route('register') }}">
                                         @csrf
 									<!-- Email -->
                                     <div class="mb-3">
-										<label class="form-label">Entrer Votre Nom</label>
+										<label class="form-label">Enter Your Name</label>
 										<input type="text" name="name" class="form-control">
 									</div>
 									<div class="mb-3">
-										<label class="form-label">Entrer Votre Adresse Email</label>
+										<label class="form-label">Enter Your Email</label>
 										<input type="email" name="email" class="form-control">
 									</div>
 
                                     <div class="mb-3">
-										<label class="form-label">Entrer Votre Numero de Telephone</label>
+										<label class="form-label">Enter Your Phone Number</label>
 										<input type="text" name="phone" class="form-control">
 									</div>
 									<!-- Password -->
 									<div class="mb-3 position-relative">
-										<label class="form-label">Entrer votre Mot de passe</label>
+										<label class="form-label">Enter Your Password</label>
 										<input class="form-control fakepassword" name="password" type="password" id="psw-input">
 										<span class="position-absolute top-50 end-0 translate-middle-y p-0 mt-3">
 											<i class="fakepasswordicon fas fa-eye-slash cursor-pointer p-2"></i>
@@ -146,16 +146,16 @@ Main Content START -->
 									</div>
 									<!-- Confirm Password -->
 									<div class="mb-3">
-										<label class="form-label">Confirmer votre mot de passe</label>
+										<label class="form-label">Confirm Your Password</label>
 										<input type="password" name="password_confirmation" class="form-control">
 									</div>
 									<!-- Remember me -->
 									<div class="mb-3">
 										<input type="checkbox" class="form-check-input" id="rememberCheck">
-										<label class="form-check-label" for="rememberCheck">Se souvenir de moi</label>
+										<label class="form-check-label" for="rememberCheck">Remember me</label>
 									</div>
 									<!-- Button -->
-									<div><button type="submit" class="btn btn-primary w-100 mb-0">Creer un compte</button></div>
+									<div><button type="submit" class="btn btn-primary w-100 mb-0">Create an account</button></div>
 
 									{{-- <!-- Divider -->
 									<div class="position-relative my-4">
@@ -170,7 +170,7 @@ Main Content START -->
 									</div> --}}
 
 									<!-- Copyright -->
-									<div class="text-primary-hover mt-3 text-center"> Copyrights ©2023 Booking. Build by <a href="">Webestica</a>. </div>
+										<div class="text-primary-hover mt-3 text-center"> Copyrights ©2025 Build by <a href=""> Denise Pegha</a>. </div>
 								</form>
 								<!-- Form END -->
 							</div>
