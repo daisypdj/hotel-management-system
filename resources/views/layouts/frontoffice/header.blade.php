@@ -66,12 +66,7 @@
 
 
 					<!-- Nav item Cabs -->
-                    @auth
-                    @if(auth()->user()->role_id=3)
-                    <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-solid fa-car me-2"></i>Book quickly</a></li>
-                    @endif
                   
-                    @endauth
                   
                     
 					
