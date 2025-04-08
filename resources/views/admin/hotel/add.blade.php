@@ -48,15 +48,15 @@ Ajouter un Hotel
                                 <div class="row g-3">
                                     <!-- Owner name -->
                                     <div class="col-12">
-                                        <label class="form-label">Nom Hotel</label>
+                                        <label class="form-label">Hotel Name</label>
                                         <div class="input-group">
-                                            <input type="text" required name="hotel_name" class="form-control" placeholder="Entrer le nom de l'Hotel">
+                                            <input type="text" required name="hotel_name" class="form-control" placeholder="Enter the hotel name">
 
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <label class="form-label">Description</label>
-                                        <textarea class="form-control" name="hotel_description" required placeholder="Entrer la description de l'Hotel"></textarea>
+                                        <textarea class="form-control" name="hotel_description" required placeholder="Enter the hotel description"></textarea>
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Localisation</label>
@@ -67,29 +67,29 @@ Ajouter un Hotel
                                         </select>
                                     </div>
                                     <div class="col-md-6">
-                                        <label class="form-label">Nombre d'etoile</label>
+                                        <label class="form-label">Star Number</label>
                                         <input class="form-control" name="star_number" required type="number" placeholder="" max="5" min="1" >
                                     </div>
                                     <!-- Contact number -->
                                     <div class="col-md-6">
                                         <label class="form-label">Contact</label>
-                                        <input class="form-control" name="hotel_phone" type="text" required placeholder="Enter le numero de telephone">
+                                        <input class="form-control" name="hotel_phone" type="text" required placeholder="Enter the phone number">
                                     </div>
 
                                     <!-- Email -->
                                     <div class="col-md-6">
-                                        <label class="form-label">Adresse email</label>
-                                        <input class="form-control" name="email" type="email" required placeholder="Enter l'email">
+                                        <label class="form-label">Email</label>
+                                        <input class="form-control" name="email" type="email" required placeholder="Enter the email">
                                     </div>
 
                                     <!-- Address -->
                                     <div class="col-12">
-                                        <label class="form-label">Nom du Gerant</label>
-                                        <input type="text" name="name" class="form-control" required placeholder="Entrer le nom du Gerant de l'Hotel">
+                                        <label class="form-label">Manager Name</label>
+                                        <input type="text" name="name" class="form-control" required placeholder="Enter the manager name">
                                     </div>
                                     <div class="col-12">
-                                        <label class="form-label">Mot de passe de l'hotel</label>
-                                        <input type="password" name="password" class="form-control" required placeholder="Entrer le mot de passe">
+                                        <label class="form-label">Hotel Password</label>
+                                        <input type="password" name="password" class="form-control" required placeholder="Enter the password">
                                     </div>
 
                                     <!-- City -->
@@ -115,7 +115,7 @@ Ajouter un Hotel
 
                                     <!-- Image Gallery -->
                                     <div class="col-12">
-                                        <label class="form-label">Image d'hotel *</label>
+                                        <label class="form-label">Hotel Image *</label>
                                         <div class="dropzone dropzone-custom" data-dropzone='{"maxFiles": 5, "addRemoveLinks": false}'>
                                             <div class="dz-message needsclick">
 
@@ -123,7 +123,7 @@ Ajouter un Hotel
                                             </div>
                                             <input type="file" name="hotel_profile" required>
                                         </div>
-                                        <p class="small mb-0 mt-2"><b>Note:</b>Uniquement JPG, JPEG et PNG. Les dimensions suggérées sont 600px * 450px. L'image la plus grande sera recadrée au format 4:3 pour s'adapter à nos vignettes/présentations..</p>
+                                        <p class="small mb-0 mt-2"><b>Note:</b>Only JPG, JPEG and PNG. The suggested dimensions are 600px * 450px. The largest image will be cropped to 4:3 format to fit our thumbnails/presentations.</p>
                                     </div>
                                 </div>
                             </div>
