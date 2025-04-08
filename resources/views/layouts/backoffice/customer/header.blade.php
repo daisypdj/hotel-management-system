@@ -25,13 +25,13 @@
 					<li class="nav-item"> <a class="nav-link active" href="{{ route('customer.dashboard') }}"><i class="fa-solid fa-hotel me-2"></i>Dashboard</a>	</li>
 
 					<!-- Nav item Flight -->
-					<li class="nav-item"> <a class="nav-link" href="{{ route('customer.my-reservations.index') }}"><i class="fa-solid fa-sign-in me-2"></i>Mes Reservations</a>	</li>
+					<li class="nav-item"> <a class="nav-link" href="{{ route('customer.my-reservations.index') }}"><i class="fa-solid fa-sign-in me-2"></i>my Reservations</a>	</li>
 
 					<!-- Nav item Tour -->
 
 
 					<!-- Nav item Cabs -->
-					<li class="nav-item"> <a class="nav-link" href="{{ route('customer.fast') }}"><i class="fa-solid fa-car me-2"></i>Reserver Rapidement</a></li>
+					<li class="nav-item"> <a class="nav-link" href="{{ route('customer.fast') }}"><i class="fa-solid fa-car me-2"></i>Fast Booking</a></li>
 				</ul>
 			</div>
 			<!-- Main navbar END -->
@@ -68,7 +68,7 @@
 
 						<!-- Links -->
 						<li> <hr class="dropdown-divider"></li>
-						<li><a class="" href="{{ route('customer.my-reservations.index') }}"><i class="bi bi-bookmark-check fa-fw me-2"></i>Mes Reservations</a></li>
+						<li><a class="" href="{{ route('customer.my-reservations.index') }}"><i class="bi bi-bookmark-check fa-fw me-2"></i>My Reservations</a></li>
 
                         <form method="POST" action="{{ route('logout') }}" id="logout-form">
                             @csrf
