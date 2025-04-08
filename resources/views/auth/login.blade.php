@@ -112,7 +112,7 @@ Main Content START -->
 						<div class="col-lg-6 order-1">
 							<div class="p-4 p-sm-7">
 								<!-- Logo -->
-								<a href="index.html-1.htm">
+								<a href="{{route('homepage')}}">
 									<img class="h-50px mb-4" src="assets/images/logo-icon.svg" alt="logo">
 								</a>
 								<!-- Title -->

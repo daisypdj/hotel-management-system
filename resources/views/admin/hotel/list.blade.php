@@ -354,16 +354,7 @@
 		<!-- Page main content START -->
 		<div class="page-content-wrapper p-xxl-4">
 
-			<!-- Title -->
 			
-
-			<!-- Counter START -->
-			
-			<!-- Counter END -->
-
-			<!-- Tabs and search START -->
-		
-			<!-- Tabs and search END -->
 
 			<!-- Tab content START -->
 			<div class="tab-content mt-5" id="myTabContent">
