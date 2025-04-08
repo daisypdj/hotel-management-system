@@ -157,7 +157,7 @@
 
                                     </div>
                                     <!-- Download button -->
-                                    <a href="#" class="btn btn-primary mb-0"><i class="bi bi-file-pdf me-2"></i>Download PDF</a>
+                                    
                                 </div>
                             </div>
                         </div>

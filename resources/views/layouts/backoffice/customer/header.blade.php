@@ -31,7 +31,7 @@
 
 
 					<!-- Nav item Cabs -->
-					<li class="nav-item"> <a class="nav-link" href="{{ route('customer.fast') }}"><i class="fa-solid fa-car me-2"></i>Fast Booking</a></li>
+
 				</ul>
 			</div>
 			<!-- Main navbar END -->
