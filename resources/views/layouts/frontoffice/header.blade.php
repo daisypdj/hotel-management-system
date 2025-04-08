@@ -48,7 +48,7 @@
 					<!-- Nav item Flight -->
                     @auth
                     @if(auth()->user()->role_id==3)
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('customer.my-reservations.index') }}"><i class="fa-solid fa-sign-in me-2"></i>Mes Reservations</a>	</li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('customer.my-reservations.index') }}"><i class="fa-solid fa-sign-in me-2"></i>My Reservations</a>	</li>
                     @endif
 
                    
