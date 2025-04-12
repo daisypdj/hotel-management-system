@@ -27,7 +27,7 @@
 					<!-- Nav item Flight -->
 					<li class="nav-item"> <a class="nav-link" href="{{ route('customer.my-reservations.index') }}"><i class="fa-solid fa-sign-in me-2"></i>my Reservations</a>	</li>
 
-					<!-- Nav item Tour -->
+					
 
 
 					<!-- Nav item Cabs -->

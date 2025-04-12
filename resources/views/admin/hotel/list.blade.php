@@ -126,23 +126,23 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" href="#collapseagent" role="button" aria-expanded="false" aria-controls="collapseagent">
-                    Chambres
+                    Rooms
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseagent" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rooms.index') }}">Listes des Chambres</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rooms.create') }}">Ajouter une Chambre</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rooms.index') }}">List of Rooms</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.rooms.create') }}">Add a Room</a></li>
                     </ul>
                 </li>
                 <!-- Menu item -->
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" href="#collapseguest" role="button" aria-expanded="false" aria-controls="collapseguest">
-                    Utilisateurs
+                    Users
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseguest" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.customers.index') }}">Listes des Utilisateurs</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.customers.create') }}">Creer un Utilisateur</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.customers.index') }}">Users</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.customers.create') }}">Add a User</a></li>
                     </ul>
                 </li>
 
@@ -153,7 +153,7 @@
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseres" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.reservations.index') }}">Listes des Reservations</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.reservations.index') }}">List of Reservations</a></li>
 
                     </ul>
                 </li>

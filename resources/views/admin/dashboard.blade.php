@@ -115,12 +115,11 @@ Dashboard
                 <!-- Table head -->
                 <div class="bg-light rounded p-3 d-none d-lg-block">
                     <div class="row row-cols-7 g-4">
-                        <div class="col"><h6 class="mb-0">Reserver par</h6></div>
-                        <div class="col"><h6 class="mb-0">De</h6></div>
-                        <div class="col"><h6 class="mb-0">Au</h6></div>
+                        <div class="col"><h6 class="mb-0">Booked by</h6></div>
+                        <div class="col"><h6 class="mb-0">Check in</h6></div>
+                        <div class="col"><h6 class="mb-0">Check out</h6></div>
                         <div class="col"><h6 class="mb-0">Hotel</h6></div>
-                        <div class="col"><h6 class="mb-0">Prix</h6></div>
-                        <div class="col"><h6 class="mb-0">Numero Chambre</h6></div>
+                        <div class="col"><h6 class="mb-0">Room Number</h6></div>
                         <div class="col"><h6 class="mb-0">Action</h6></div>
                     </div>
                 </div>
