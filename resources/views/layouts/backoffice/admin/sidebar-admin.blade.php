@@ -21,12 +21,12 @@
                 <!-- Menu item -->
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" href="#collapsebooking" role="button" aria-expanded="false" aria-controls="collapsebooking">
-                    Hotel
+                    Hotels
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapsebooking" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.hotels.index') }}">Listes des Hotels</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.hotels.create') }}">Creer un Hotel</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.hotels.index') }}">List of Hotels</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.hotels.create') }}">Create a Hotel</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -46,19 +46,19 @@
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseguest" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.customers.index') }}">Users</a></li>
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.customers.create') }}">Add a User</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.customers.index') }}">Listes des Utilisateurs</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.customers.create') }}">Creer un Utilisateur</a></li>
                     </ul>
                 </li>
 
                 <!-- Menu item -->
                 <li class="nav-item">
                     <a class="nav-link" data-bs-toggle="collapse" href="#collapseres" role="button" aria-expanded="false" aria-controls="collapseagent">
-                    Reservation
+                    Reservations
                     </a>
                     <!-- Submenu -->
                     <ul class="nav collapse flex-column" id="collapseres" data-bs-parent="#navbar-sidebar">
-                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.reservations.index') }}">List of Reservations</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.reservations.index') }}">Listes des Reservations</a></li>
 
                     </ul>
                 </li>
