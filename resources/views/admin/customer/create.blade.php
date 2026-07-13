@@ -46,9 +46,9 @@ New Customer
                                 <div class="row g-3">
                                     <!-- Owner name -->
                                     <div class="col-12">
-                                            <label class="form-label">Nom</label>
+                                            <label class="form-label">Name</label>
                                         <div class="input-group">
-                                            <input type="text" required name="name" class="form-control" placeholder="Entrer le nom de l'Hotel">
+                                            <input type="text" required name="name" class="form-control" placeholder="Enter the name">
 
                                         </div>
                                     </div>
@@ -56,18 +56,18 @@ New Customer
                                         <label class="form-label">Email</label>
                                         <input class="form-control" name="email" type="email" required placeholder="Entrer l'email">
                                     </div>
-                                    
+
                                     <div class="col-md-6">
                                         <label class="form-label">Telephone</label>
                                         <input class="form-control" name="phone" required type="number" placeholder="Enter your phone number" >
                                     </div>
                                     <!-- Contact number -->
                                     <div class="col-md-6">
-                                        <label class="form-label">Mot de passe</label>
+                                        <label class="form-label">password</label>
                                         <input class="form-control" name="password" type="password" required placeholder="Entrer le mot de passe">
                                     </div>
 
-                                   
+
 
                                     <!-- City -->
 
@@ -84,7 +84,7 @@ New Customer
 
                         <!-- Button -->
                         <div class="text-end">
-                            <button type="submit" class="btn btn-primary mb-0">Ajouter</button>
+                            <button type="submit" class="btn btn-primary mb-0">Add</button>
                         </div>
                     </form>
                 </div>

@@ -114,7 +114,7 @@ My Reservations
                                             </div>
 
                                             <!-- Title -->
-                                            <h5 class="card-title mb-1">{{ $reservation->hotel_name }}- Chambre numero {{ $reservation->room_id }}</h5>
+                                            <h5 class="card-title mb-1">{{ $reservation->hotel_name }}- Room Number {{ $reservation->room_id }}</h5>
                                             <small><i class="bi bi-geo-alt me-2"></i>{{ $reservation->hotel_town }}</small>
 
                                             <!-- Price and Button -->
@@ -137,7 +137,7 @@ My Reservations
                                 </div>
                             </div>
                             @empty
-                                Aucune Reservation
+                                No Reservation
                             @endforelse
 
 

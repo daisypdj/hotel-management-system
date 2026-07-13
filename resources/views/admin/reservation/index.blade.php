@@ -1,7 +1,7 @@
 @extends("layouts.backoffice.admin.main-admin")
 
 @section('title')
-Liste des reservations
+reservations list
 @endsection
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/choices/css/choices.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/dropzone/css/dropzone.css') }}">
@@ -51,12 +51,12 @@ Liste des reservations
                 <!-- Table head -->
                 <div class="bg-light rounded p-3 d-none d-lg-block">
                     <div class="row row-cols-7 g-4">
-                        <div class="col"><h6 class="mb-0">Reserver par</h6></div>
-                        <div class="col"><h6 class="mb-0">De</h6></div>
-                        <div class="col"><h6 class="mb-0">Au</h6></div>
+                        <div class="col"><h6 class="mb-0">booked By</h6></div>
+                        <div class="col"><h6 class="mb-0">check in</h6></div>
+                        <div class="col"><h6 class="mb-0">check out</h6></div>
                         <div class="col"><h6 class="mb-0">Hotel</h6></div>
-                        <div class="col"><h6 class="mb-0">Prix</h6></div>
-                        <div class="col"><h6 class="mb-0">Numero Chambre</h6></div>
+                        <div class="col"><h6 class="mb-0">Price</h6></div>
+                        <div class="col"><h6 class="mb-0">Room Number</h6></div>
                         <div class="col"><h6 class="mb-0">Action</h6></div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ Liste des reservations
                 <div class="row row-cols-xl-7 align-items-lg-center border-bottom g-4 px-2 py-4">
                     <!-- Data item -->
                     <div class="col">
-                        <small class="d-block d-lg-none">Reserver par:</small>
+                        <small class="d-block d-lg-none">Booked by:</small>
                         <div class="d-flex align-items-center">
                             <!-- Avatar -->
 
@@ -78,13 +78,13 @@ Liste des reservations
 
                     <!-- Data item -->
                     <div class="col">
-                        <small class="d-block d-lg-none">De:</small>
+                        <small class="d-block d-lg-none">check in:</small>
                         <h6 class="mb-0 fw-normal">{{ $reservation->check_in }}</h6>
                     </div>
 
                     <!-- Data item -->
                     <div class="col">
-                        <small class="d-block d-lg-none">Au:</small>
+                        <small class="d-block d-lg-none">check out:</small>
                         <h6 class="mb-0 fw-normal">{{ $reservation->check_out }}</h6>
                     </div>
 
@@ -105,13 +105,13 @@ Liste des reservations
 
                     <!-- Data item -->
                     <div class="col">
-                        <small class="d-block d-lg-none">Prix:</small>
+                        <small class="d-block d-lg-none">Price:</small>
                         <h6 class="text-success mb-0">{{ $reservation->total_price }} XAF</h6>
                     </div>
 
                     <!-- Data item -->
                     <div class="col">
-                        <small class="d-block d-lg-none">Numero Chambre:</small>
+                        <small class="d-block d-lg-none">Room Number:</small>
                         <div class="badge bg-success bg-opacity-10 text-success">{{ $reservation->room_id }}</div>
                     </div>
 

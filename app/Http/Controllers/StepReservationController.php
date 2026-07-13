@@ -29,7 +29,7 @@ class StepReservationController extends Controller
         return view('Hotel.step-one',compact('hotels','classes'));
 
     }
-        
+
     public function stepTwo($id,Request $request){
         $classe=$request->session()->get('classe');
         $rooms=DB::table('rooms')

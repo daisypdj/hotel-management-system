@@ -1,7 +1,7 @@
 @extends("layouts.backoffice.admin.main-admin")
 
 @section('title')
-Liste des clients
+Liste of clients
 @endsection
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/choices/css/choices.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/dropzone/css/dropzone.css') }}">
@@ -34,13 +34,13 @@ Liste des clients
             <!-- Card body START -->
             <div class="card-body">
                 <!-- Search and select START -->
-               
+
                 <!-- Search and select END -->
 
                 <!-- Table head -->
                 <div class="bg-light rounded p-3 d-none d-lg-block">
                     <div class="row row-cols-7 g-4">
-                        <div class="col"><h6 class="mb-0">Nom</h6></div>
+                        <div class="col"><h6 class="mb-0">Name</h6></div>
                         <div class="col"><h6 class="mb-0">Email</h6></div>
                         <div class="col"><h6 class="mb-0">Telephone</h6></div>
                         <div class="col"><h6 class="mb-0">Action</h6></div>
@@ -51,7 +51,7 @@ Liste des clients
                 <div class="row row-cols-xl-7 align-items-lg-center border-bottom g-4 px-2 py-4">
                     <!-- Data item -->
                     <div class="col">
-                        <small class="d-block d-lg-none">Nom:</small>
+                        <small class="d-block d-lg-none">Name:</small>
                         <div class="d-flex align-items-center">
                             <!-- Avatar -->
 
@@ -74,13 +74,13 @@ Liste des clients
                         <h6 class="mb-0 fw-normal">{{ $customer->phone }}</h6>
                     </div>
 
-                  
+
 
                     <!-- Data item -->
-                   
+
 
                     <!-- Data item -->
-                  
+
 
                     <!-- Data item -->
                     <div class="col">
