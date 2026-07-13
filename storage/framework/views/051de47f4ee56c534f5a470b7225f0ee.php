@@ -1,0 +1,105 @@
+<nav class="navbar sidebar navbar-expand-xl navbar-light">
+    <!-- Navbar brand for xl START -->
+    <div class="d-flex align-items-center">
+        <a class="navbar-brand" href="<?php echo e(route('homepage')); ?>">
+            <img class="light-mode-item navbar-brand-item" src="<?php echo e(asset('assets/images/logo-hotel.svg')); ?>" alt="logo" style="width: 100px;height:100px;">
+            <img class="dark-mode-item navbar-brand-item" src="<?php echo e(asset('assets/images/logo-hotel-light.svg')); ?>" alt="logo">
+        </a>
+    </div>
+    <!-- Navbar brand for xl END -->
+
+    <div class="offcanvas offcanvas-start flex-row custom-scrollbar h-100" data-bs-backdrop="true" tabindex="-1" id="offcanvasSidebar">
+        <div class="offcanvas-body sidebar-content d-flex flex-column pt-4">
+
+            <!-- Sidebar menu START -->
+            <ul class="navbar-nav flex-column" id="navbar-sidebar">
+                <!-- Menu item -->
+                <li class="nav-item"><a href="<?php echo e(route('admin.dashboard')); ?>" class="nav-link active">Dashboard</a></li>
+
+                <!-- Title -->
+
+                <!-- Menu item -->
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapsebooking" role="button" aria-expanded="false" aria-controls="collapsebooking">
+                    Hotels
+                    </a>
+                    <!-- Submenu -->
+                    <ul class="nav collapse flex-column" id="collapsebooking" data-bs-parent="#navbar-sidebar">
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo e(route('admin.hotels.index')); ?>">List of Hotels</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo e(route('admin.hotels.create')); ?>">Create a Hotel</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapseagent" role="button" aria-expanded="false" aria-controls="collapseagent">
+                    Rooms
+                    </a>
+                    <!-- Submenu -->
+                    <ul class="nav collapse flex-column" id="collapseagent" data-bs-parent="#navbar-sidebar">
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo e(route('admin.rooms.index')); ?>">List of Rooms</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo e(route('admin.rooms.create')); ?>">Add a Room</a></li>
+                    </ul>
+                </li>
+                <!-- Menu item -->
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapseguest" role="button" aria-expanded="false" aria-controls="collapseguest">
+                    Users
+                    </a>
+                    <!-- Submenu -->
+                    <ul class="nav collapse flex-column" id="collapseguest" data-bs-parent="#navbar-sidebar">
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo e(route('admin.customers.index')); ?>">user list</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo e(route('admin.customers.create')); ?>">Create user</a></li>
+                    </ul>
+                </li>
+
+                <!-- Menu item -->
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapseres" role="button" aria-expanded="false" aria-controls="collapseagent">
+                    Reservations
+                    </a>
+                    <!-- Submenu -->
+                    <ul class="nav collapse flex-column" id="collapseres" data-bs-parent="#navbar-sidebar">
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo e(route('admin.reservations.index')); ?>">Listes des Reservations</a></li>
+
+                    </ul>
+                </li>
+
+                <!-- Menu item -->
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="collapse" href="#collapsereception" role="button" aria-expanded="false" aria-controls="collapsereception">
+                    Réceptionnistes
+                    </a>
+                    <!-- Submenu -->
+                    <ul class="nav collapse flex-column" id="collapsereception" data-bs-parent="#navbar-sidebar">
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo e(route('admin.receptionnistes.index')); ?>">Liste des réceptionnistes</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="<?php echo e(route('admin.receptionnistes.create')); ?>">Créer une réceptionniste</a></li>
+                    </ul>
+                </li>
+
+                <!-- Menu item -->
+
+            </ul>
+            <!-- Sidebar menu end -->
+
+            <!-- Sidebar footer START -->
+            <div class="d-flex align-items-center justify-content-between text-primary-hover mt-auto p-3">
+
+                <form method="POST" action="<?php echo e(route('logout')); ?>" id="logout-form">
+                    <?php echo csrf_field(); ?>
+                  </form>
+
+
+
+                <a class="h6 fw-light mb-0 text-body"  data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Sign out" href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Log out
+                </a>
+                <a class="h6 mb-0 text-body" href="admin-settings.html.htm" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Settings">
+                    <i class="bi bi-gear-fill"></i>
+                </a>
+            </div>
+            <!-- Sidebar footer END -->
+
+        </div>
+    </div>
+</nav>
+<?php /**PATH C:\laragon\www\hotel-management-system\resources\views/layouts/backoffice/admin/sidebar-admin.blade.php ENDPATH**/ ?>
