@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Espace Réceptionniste</title>
+    <title>Receptioniste dashboard</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -33,12 +33,12 @@
 
         <div class="topbar p-4 mb-4 d-flex justify-content-between align-items-center flex-wrap gap-2">
             <div>
-                <h1 class="fs-4 mb-1"><i class="bi bi-qr-code-scan me-2"></i>Validation des paiements</h1>
-                <p class="mb-0 opacity-75">Scannez le QR code présenté par le client à la réception.</p>
+                <h1 class="fs-4 mb-1"><i class="bi bi-qr-code-scan me-2"></i>Payment Validation</h1>
+                <p class="mb-0 opacity-75">Scan the QR code presented by the guest at the reception desk</p>
             </div>
             <form method="POST" action="<?php echo e(route('logout')); ?>">
                 <?php echo csrf_field(); ?>
-                <button class="btn btn-light btn-sm"><i class="bi bi-box-arrow-right me-1"></i>Déconnexion</button>
+                <button class="btn btn-light btn-sm"><i class="bi bi-box-arrow-right me-1"></i>logout</button>
             </form>
         </div>
 
@@ -49,7 +49,7 @@
                         <div class="icon-xl bg-warning rounded-3 text-white"><i class="bi bi-hourglass-split"></i></div>
                         <div class="ms-3">
                             <h4 class="mb-0"><?php echo e($enAttenteCount); ?></h4>
-                            <span>Paiements en attente</span>
+                            <span>Pending Payement</span>
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                         <div class="icon-xl bg-success rounded-3 text-white"><i class="bi bi-check2-circle"></i></div>
                         <div class="ms-3">
                             <h4 class="mb-0"><?php echo e($valideAujourdhui); ?></h4>
-                            <span>Validés aujourd'hui</span>
+                            <span>Validate today</span>
                         </div>
                     </div>
                 </div>
@@ -74,15 +74,14 @@
                     <h5 class="mb-3"><i class="bi bi-camera-video me-1"></i>Scanner</h5>
                     <div id="reader"></div>
                     <div id="scanResult" class="scan-result info mt-3">
-                        <i class="bi bi-info-circle me-1"></i> Placez le QR code du client devant la caméra.
-                    </div>
+                        <i class="bi bi-info-circle me-1"></i> Place the customer QR code infront of the camera
                 </div>
             </div>
 
             <!-- Recent validations -->
             <div class="col-lg-6">
                 <div class="card border p-3 h-100">
-                    <h5 class="mb-3"><i class="bi bi-clock-history me-1"></i>Dernières validations</h5>
+                    <h5 class="mb-3"><i class="bi bi-clock-history me-1"></i>Recent validations</h5>
                     <ul class="list-group list-group-flush" id="recentList">
                         <?php $__empty_1 = true; $__currentLoopData = $recentValidations; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $r): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
@@ -93,7 +92,7 @@
                                 <span class="badge bg-success bg-opacity-10 text-success"><?php echo e(number_format($r->total_price,0,',',' ')); ?> XAF</span>
                             </li>
                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
-                            <li class="list-group-item px-0 text-muted">Aucune validation pour le moment.</li>
+                            <li class="list-group-item px-0 text-muted">No validation for the moment.</li>
                         <?php endif; ?>
                     </ul>
                 </div>
