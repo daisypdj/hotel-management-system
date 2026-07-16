@@ -73,10 +73,16 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    
+
     //Route::resource('rooms',RoomController::class);
 });
 
 
 Route::get('/', [Homecontroller::class,"homepage"])->name('homepage');
 require __DIR__.'/auth.php';
+
+
+Route::get('/deploy-database', function() {
+    \Artisan::call('migrate:fresh', ['--seed' => true]);
+    return "Base de données synchronisée en ligne !";
+});
